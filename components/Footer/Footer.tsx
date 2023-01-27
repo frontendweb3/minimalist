@@ -8,7 +8,13 @@ export default function Footer() {
         <div className="container px-0 md:px-12 pb-6 flex flex-col sm:flex-row items-center justify-between mx-auto">
           
           <Link href="https://flowbite.com/" className="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+           
+            <svg width="50" height="128" className="mr-2"  viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="14" width="100" height="100" rx="50" fill="black"/>
+              <path d="M64 29L81.3205 59H46.6795L64 29Z" fill="white"/>
+              <path d="M46.8485 67.4071L81.4882 67.1048L64.4301 97.2548L46.8485 67.4071Z" fill="#FDFDFD"/>
+            </svg>
+
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
           </Link>
   
