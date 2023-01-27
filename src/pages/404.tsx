@@ -13,13 +13,14 @@ function ErrorComponent() {
         nofollow={true}
       />
 
-      <div className="my-12 bg-white h-[450px] flex flex-col items-center justify-center mx-auto">
-        <h2 className="text-6xl text-center mt-10">My Story </h2> 
-        <p className="text-xl text-center mt-12">something Worng </p>
-        <Link className="text-lg text-center mt-10" href="/"> 
+      <div className="my-12 bg-white h-[640px] flex flex-col items-center justify-center mx-auto">
+        <h2 className="text-8xl font-bold text-center mt-10 text-gray-700">Oops! </h2> 
+        <p className="text-2xl text-center mt-12">The page you are looking for might have been removed, had its name changed or temporaiily unavailable</p>
+        <Link className="text-lg bg-slate-900 text-center mt-10 px-10 py-4 text-white" href="/"> 
           Home
         </Link>
       </div>
+
     </>
   )
 }
