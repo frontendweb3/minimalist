@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@next/font': 13.1.4
   '@tailwindcss/typography': ^0.5.9
+  '@types/lodash': ^4.14.191
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -13,6 +14,7 @@ specifiers:
   flowbite: ^1.6.3
   flowbite-react: ^0.3.7
   google-map-react: ^2.2.0
+  lodash: ^4.17.21
   material-ui-popup-state: ^5.0.4
   next: 13.1.4
   next-seo: ^5.15.0
@@ -27,6 +29,7 @@ specifiers:
 dependencies:
   '@next/font': 13.1.4
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
+  '@types/lodash': 4.14.191
   '@types/node': 18.11.18
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
@@ -34,6 +37,7 @@ dependencies:
   eslint: 8.32.0
   eslint-config-next: 13.1.4_7uibuqfxkfaozanbtbziikiqje
   google-map-react: 2.2.0_biqbaboplfbrettd7655fr4n2y
+  lodash: 4.17.21
   material-ui-popup-state: 5.0.4_5ndqzdd6t4rivxsukjv3i3ak2q
   next: 13.1.4_3duxcpitbtplz62feflag7fwby
   next-seo: 5.15.0_gru2niblrprbai56sdagiiy5sa
@@ -646,6 +650,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: false
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
 
   /@types/node/18.11.18:
@@ -2531,7 +2539,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-symbols/4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
