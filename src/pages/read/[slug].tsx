@@ -27,7 +27,7 @@ function Read() {
 
                                 <div className="flex flex-col">
 
-                                    <Link href="#" rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
+                                    <Link href="/author/jese-leos" rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
                                         Jese Leos
                                     </Link>
 
