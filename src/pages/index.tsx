@@ -1,12 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react';
-
 import { NextSeo } from 'next-seo';
-import RajdeepSingh from '@/components/asset/RajdeepSingh.jpg'
-import logo from '@/components/asset/logo.svg'
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
 import MainCard from '@/components/MainCard/MainCard';
 import Card from '@/components/Card/Card';
 
