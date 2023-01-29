@@ -11,7 +11,7 @@ function About() {
             description="About us - here is my story"
         /> 
 
-        <div className='bg-white p-20 my-24  grid grid-cols-1  lg:grid-cols-2 justify-items-center items-center'>
+        <div className='bg-white dark:text-white dark:bg-gray-900 p-20 my-24  grid grid-cols-1  lg:grid-cols-2 justify-items-center items-center'>
 
           <div className='p-10'>
 
