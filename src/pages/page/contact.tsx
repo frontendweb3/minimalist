@@ -1,7 +1,5 @@
 import React from 'react'
 import { NextSeo } from 'next-seo';
-import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 function About() {
 
@@ -12,9 +10,9 @@ function About() {
                 description="About us - here is my story"
             />
 
-            <div className='bg-white p-20 my-24 grid grid-cols-1 justify-items-center items-center'>
+            <div className='bg-white dark:bg-gray-900 p-20 my-24 grid grid-cols-1 justify-items-center items-center'>
 
-                <section className="bg-white dark:bg-gray-900">
+                <section className="">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
                         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Send feedback about us if you have any queries or questions. Ask our team in the office—our time reply on office time.</p>
