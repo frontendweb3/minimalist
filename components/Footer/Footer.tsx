@@ -18,7 +18,7 @@ export default function Footer() {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
           </Link>
   
-            <ul className="flex flex-row dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-row">
               
               <li>
                 <Link href="/" className="block py-2 pl-3 pr-4 text-black rounded bg-transparent dark:text-white" aria-current="page">Home</Link>
@@ -40,22 +40,22 @@ export default function Footer() {
 
         <div className="container px-12 pt-6 flex flex-wrap items-center justify-between mx-auto">
           
-          <Link href="https://flowbite.com/" className="flex items-center">
+          <Link href="https://flowbite.com/" className="flex items-center dark:text-white">
             Copyright @frontendweb
           </Link>
          
           <div className="flex md:order-2">
 
             <div className="flex-row flex md:flex">
-              <Link href={'#'}>
-                <FaFacebookF  />
-              </Link>
-              <Link className="mx-3"  href={'#'}>
-                <FaTwitter />
-              </Link>
-              <Link href={'#'}>
-                <FaLinkedinIn />
-              </Link>
+            <Link target="_blank" className="ml-3" href={'https://www.facebook.com/officialrajdeepsingh'}>
+              <FaFacebookF className="dark:text-white" />
+            </Link>
+            <Link target="_blank" className="ml-3" href={'https://twitter.com/Official_R_deep'}>
+              <FaTwitter className="dark:text-white" />
+            </Link>
+            <Link target="_blank" className="ml-3" href={'https://www.linkedin.com/in/officalrajdeepsingh/'}>
+              <FaLinkedinIn className="dark:text-white" />
+            </Link>
             </div>
 
           </div>
