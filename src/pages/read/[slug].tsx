@@ -1,14 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import Card from '@/components/Card/Card';
 import { allPosts } from 'contentlayer/generated';
 import _ from 'lodash';
 import dayjs from "dayjs";
+import ReadMorePost from '@/components/ReadMorePost/ReadMorePost'
 
 
-function Read({post}) {
+function Read({post,authorPost}) {
 
+   console.log(authorPost);
+   
 
     return (
         <>
@@ -16,7 +18,7 @@ function Read({post}) {
 
                 <div className="flex flex-col justify-between px-4 mx-auto max-w-screen-xl">
 
-                    <div style={{ backgroundImage: `url(${post.image})` }} className="rounded-t-lg bg-fixed h-[650px] w-full bg-origin-content  bg-cover bg-no-repeat p-2"></div>
+                    <div style={{ backgroundImage: `url(${post?.image})` }} className="rounded-t-lg bg-fixed h-[650px] w-full bg-origin-content  bg-cover bg-no-repeat p-2"></div>
 
                     <article className="my-12 prose lg:prose-xl w-full mx-auto max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
 
@@ -90,24 +92,18 @@ function Read({post}) {
             </div>
 
 
-            <div className="container my-10 mx-auto">
+            {
+                authorPost? <ReadMorePost posts={authorPost} />: ""
 
-                <h1 className="mb-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-white px-10"> Read more </h1>
+            }
 
-                <div className='grid grid-cols-1 md:grid-cols-2 md:gap-5 justify-items-center mx-auto'>
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-
-            </div>
         </>
     );
 }
 
 export default Read;
 
-// Generates `/posts/1` and `/posts/2`
+
 export async function getStaticPaths() {
 
 
@@ -125,12 +121,21 @@ export async function getStaticPaths() {
   // `getStaticPaths` requires using `getStaticProps`
   export async function getStaticProps({params}: any) {
 
-    // params: { slug: '5-reasons-why-you-shouldn-t-learn-photography-on-your-own' },
+    
 
     let post= _.filter(allPosts,function name(item) {
+
         return item.slug === params.slug
+
     })
+
+    let authorPost = _.filter(allPosts,function name(item) {
+
+        return item.author === post[0].author
+
+    })
+
     return {
-      props: { post:post[0] },
+      props: { post:post[0]  , authorPost},
     }
   }
