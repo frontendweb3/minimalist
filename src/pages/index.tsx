@@ -8,7 +8,7 @@ import { allPosts } from 'contentlayer/generated';
 import { paginate } from '../../utility/utility.ts';
 
 
-export default function Index({post,pagination}) {
+export default function Index({single,posts,pagination}) {
 
 
   return (
@@ -35,15 +35,21 @@ export default function Index({post,pagination}) {
         }} />
 
 
-      <MainCard item={post[0]} />
+
+      <MainCard item={single} />
 
       <h2 className="container text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-10">All Article -</h2>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-5 justify-items-center mx-auto'>
         
         {
-          post.map(
-            (item)=> <Card item={item} key={item.title} />
+          posts.map(
+            (item)=>{
+              
+              if (item.length !== 0) {
+                return <Card item={item} key={item.title} />
+              } 
+            }
           )
         }
 
@@ -61,16 +67,14 @@ export async function getStaticProps() {
 
   let page_par_posts= process.env.PAGE_PAR_POSTS;
 
-  const sigle= _.slice(allPosts, 0, 1)
-  const posts =  _.slice(allPosts, 1, page_par_posts)
+  const posts =  _.slice(allPosts, 0, page_par_posts)
 
   let pagination = {
     page_par_posts:page_par_posts,
     pageCount: paginate()
   }
-  
 
   return {
-    props: { sigle:sigle, post: posts,pagination },
+    props: { single: _.first(posts),  posts: _.drop(posts),pagination },
   }
 }
