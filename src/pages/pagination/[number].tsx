@@ -8,7 +8,7 @@ import { allPosts } from 'contentlayer/generated';
 import { paginateUtility, paginate } from '../../../utility/utility.ts';
 
 
-export default function Index({ single, posts, pagination }) {
+export default function Index({ single,posts, pagination }) {
 
 
     return (
@@ -37,7 +37,7 @@ export default function Index({ single, posts, pagination }) {
             />
 
 
-            <MainCard item={single[0]} />
+            <MainCard item={single} />
 
 
             <h2 className="container text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-10">All Article -</h2>
@@ -47,7 +47,9 @@ export default function Index({ single, posts, pagination }) {
                 {
                     posts.map(
                         (item: { title: React.Key | null | undefined; }) => {
-                            return <Card key={item.title} item={item} />
+                            if (item.length !== 0) {
+                                return <Card item={item} key={item.title} />
+                            }
                         }
                     )
                 }
@@ -77,39 +79,25 @@ export async function getStaticProps(content: { params: { number: string; }; }) 
 
     let page_par_posts = process.env.PAGE_PAR_POSTS;
 
-    let single = []
+    let posts =[]
 
-    let posts = []
+    if ( Number(number) === 2) {
+        posts = _.slice(allPosts, page_par_posts, page_par_posts * Number(number))
+    }    
 
-    console.log(Number(number) > 2);
-    
+    if (Number(number) >= 3) {
 
-    if ( Number(number) > 2 ) {
-        single = _.slice(allPosts, page_par_posts * (Number(number) - 1), page_par_posts * (Number(number) - 1) + 1)
+        posts = _.slice(allPosts,  page_par_posts * ( Number(number) - 1 ), page_par_posts * (Number(number) + 1))
 
-        console.log(allPosts, page_par_posts * (Number(number) - 1), ' allPosts, page_par_posts * (Number(number) - 1 ) ');
-
-        console.log(page_par_posts * (Number(number) - 1), ' page_par_posts * (Number(number) - 1 ) ');
-
-        posts = _.slice(allPosts, page_par_posts * (Number(number) - 1), page_par_posts * (Number(number) - 1))
     }
-
-    if ( Number(number) === 2 ) {
-
-        single = _.slice(allPosts, page_par_posts, page_par_posts + 1)
-
-        posts = _.slice(allPosts, page_par_posts + 1, _.multiply(Number(number), page_par_posts))
-    }
-
 
     let pagination = {
         page_par_posts: page_par_posts,
         pageCount: paginate()
     }
 
-
     return {
-        props: { single: single, posts: posts, pagination },
+        props: { single: _.first(posts),  posts: _.drop(posts),pagination },
     }
 
 }
