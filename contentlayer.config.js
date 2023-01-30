@@ -49,6 +49,11 @@ export const Post = defineDocumentType(() => ({
       description: 'The date of the post',
       required: true,
     },
+    id: {
+      type: 'number',
+      description: 'The id of the post',
+      required: true,
+    },
   },
 }))
 
