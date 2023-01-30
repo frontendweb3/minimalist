@@ -1,4 +1,5 @@
 ---
+id: 03
 title: 7 Ways To Use Computer Science To Your Advantage.
 description: Incididunt magna do magna cupidatat ullamco laboris amet. Tempor aute ipsum culpa esse ipsum veniam excepteur duis mollit irure cillum.
 date: 2022-11-11T08:29:39.860Z

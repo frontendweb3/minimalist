@@ -1,4 +1,5 @@
 ---
+id: 06
 title: 15 Facts You Never Knew About Photography
 description: Dolor adipisicing adipisicing Lorem et irure veniam nisi anim excepteur mollit
   occaecat eu.

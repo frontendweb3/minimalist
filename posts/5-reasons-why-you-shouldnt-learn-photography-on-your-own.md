@@ -1,4 +1,5 @@
 ---
+id: 01
 title: 5 Reasons Why You Shouldnt Learn Photography On Your Own.
 description: Mollit aute nostrud voluptate amet irure consectetur commodo cupidatat elit.
   Non ut dolor nulla dolor duis. Anim eiusmod fugiat eiusmod ut nulla nulla

@@ -1,4 +1,5 @@
 ---
+id: 010
 title: How Computer Science Is Going To Change Your Business Strategies
 description: Cupidatat occaecat dolore dolor aute enim consequat nulla dolor dolor
   reprehenderit irure reprehenderit nisi.
