@@ -24,6 +24,6 @@
        "@/utility/":["./utility/*"]
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts",".contentlayer/generated"],
   "exclude": ["node_modules"]
 }
