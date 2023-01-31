@@ -7,10 +7,8 @@ import dayjs from "dayjs";
 import ReadMorePost from '@/components/ReadMorePost/ReadMorePost'
 
 
-function Read({post,authorPost}) {
+function Read({ post, authorPost, pagination }) {
 
-   console.log(authorPost);
-   
 
     return (
         <>
@@ -20,7 +18,7 @@ function Read({post,authorPost}) {
 
                     <div style={{ backgroundImage: `url(${post?.image})` }} className="rounded-t-lg bg-fixed h-[650px] w-full bg-origin-content  bg-cover bg-no-repeat p-2"></div>
 
-                    <article className="my-12 prose lg:prose-xl w-full mx-auto max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                    <article className="my-12 prose lg:prose-xl dark:prose-invert w-full mx-auto max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
 
 
                         <h1 style={{ margin: "0px" }} className="prose-h1:my-0 text-3xl font-extrabold leading-tight text-gray-900 lg:text-4xl dark:text-white">{post.title}</h1>
@@ -31,20 +29,18 @@ function Read({post,authorPost}) {
 
                             <div className="inline-flex items-center text-sm text-gray-900 dark:text-white">
 
-                                <img className="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos" />
+                                <img className="mr-4 w-16 h-16 rounded-full" src={post.image} alt={post.author} />
 
                                 <div className="flex flex-col">
 
-                                    <Link href="/author/jese-leos" rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
-                                       {post.author}
+                                    <Link href={`/author/${post.author.trim().toLowerCase().replaceAll(" ","-")}`} rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
+                                        {post.author}
                                     </Link>
 
                                     <div className="flex flex-col md:flex-row ">
-                                        <p style={{ margin: "0px" }} className="text-base font-light text-gray-500 dark:text-gray-400">Graphic Designer, educator & CEO Flowbite</p>
-
                                         <p style={{ "margin": "0px" }} className="ml-3 text-base font-light text-gray-500 dark:text-gray-400">
-                                            <time className="ml-0 md:ml-2" dateTime="2022-02-08" title="February 8th, 2022">
-                                            { dayjs(post.date).format("MMM DD, YYYY")}
+                                            <time dateTime="2022-02-08" title="February 8th, 2022">
+                                                {dayjs(post.date).format("MMM DD, YYYY")}
                                             </time>
                                         </p>
                                     </div>
@@ -55,7 +51,7 @@ function Read({post,authorPost}) {
 
                         </address>
 
-                        <div dangerouslySetInnerHTML={{__html: post.body.html}}>
+                        <div dangerouslySetInnerHTML={{ __html: post.body.html }}>
                         </div>
 
                     </article>
@@ -69,21 +65,36 @@ function Read({post,authorPost}) {
 
                 <ul className='flex flex-col items-center md:flex-row justify-center md:justify-between'>
 
+
                     <li className='bg-white flex flex-row py-4 px-5 items-center'>
 
-                        <BsArrowLeft className="mr-1" /> Previous :
 
-                        <Link href="/">
-                            How to install bun in debian distros?
-                        </Link>
+
+                        {
+                            pagination.prev !== null ? <>
+                                <BsArrowLeft className="mr-1" />
+                                Previous :
+                                <Link href={pagination.prev.slug}>
+                                    {pagination.prev.title}
+                                </Link>
+                            </> : ''
+                        }
+
 
                     </li>
 
                     <li className="bg-white mt-8 md:mt-0 flex flex-row py-4 px-5 items-center">
-                            Next :
-                        <Link href="/">
-                            How to Record sound in Ubuntu?
-                        </Link>
+
+                        {
+                            pagination.next !== null ? <>
+                                Next :
+                                <Link href={pagination.next.slug}>
+                                    {pagination.next.title}
+                                </Link>
+                            </> : ""
+                        }
+
+
 
                         <BsArrowRight className="ml-1" />
                     </li>
@@ -93,7 +104,7 @@ function Read({post,authorPost}) {
 
 
             {
-                authorPost? <ReadMorePost posts={authorPost} />: ""
+                authorPost ? <ReadMorePost posts={authorPost} /> : ""
 
             }
 
@@ -113,29 +124,39 @@ export async function getStaticPaths() {
         item => paths.push({ params: { slug: item.slug } })
     )
     return {
-      paths: paths ,
-      fallback: false,
+        paths: paths,
+        fallback: false,
     }
-  }
-  
-  // `getStaticPaths` requires using `getStaticProps`
-  export async function getStaticProps({params}: any) {
+}
 
-    
+// `getStaticPaths` requires using `getStaticProps`
+export async function getStaticProps({ params }: any) {
 
-    let post= _.filter(allPosts,function name(item) {
+
+
+
+
+    const getPaginationIndex = allPosts.findIndex((element) => element.slug === params.slug);
+
+
+    const pagination = {
+        next: allPosts[getPaginationIndex + 1] === null ? null : allPosts[getPaginationIndex + 1],
+        prev: getPaginationIndex === 0 ? null : allPosts[getPaginationIndex - 1]
+    }
+
+    let post = _.filter(allPosts, function name(item) {
 
         return item.slug === params.slug
 
     })
 
-    let authorPost = _.filter(allPosts,function name(item) {
+    let authorPost = _.filter(allPosts, function name(item) {
 
         return item.author === post[0].author
 
     })
 
     return {
-      props: { post:post[0]  , authorPost},
+        props: { post: post[0], authorPost, pagination },
     }
-  }
+}
