@@ -27,3 +27,4 @@ export function paginate(){
 
     return paths
 }
+export const domain = 'http://localhost:3000/'
