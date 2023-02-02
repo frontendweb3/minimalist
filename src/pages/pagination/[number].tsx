@@ -5,10 +5,11 @@ import Card from '@/components/Card/Card';
 import Pagination from "@/components/Pagination/Pagination"
 import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
-import { paginateUtility, paginate } from '../../../utility/utility.ts';
+import { paginateUtility, paginate } from '../../../utility/utility';
+import {IndexPage,Posts} from '@/type';
 
 
-export default function Index({ single,posts, pagination }) {
+export default function Index({ single,posts, pagination }:IndexPage) {
 
 
     return (
@@ -46,9 +47,9 @@ export default function Index({ single,posts, pagination }) {
 
                 {
                     posts.map(
-                        (item: { title: React.Key | null | undefined; }) => {
+                        (item: Posts) => {
                             if (item.length !== 0) {
-                                return <Card item={item} key={item.title} />
+                                return <Card item={item} key={item.id} />
                             }
                         }
                     )
@@ -77,9 +78,9 @@ export async function getStaticProps(content: { params: { number: string; }; }) 
     let { params: { number } } = content
 
 
-    let page_par_posts = process.env.PAGE_PAR_POSTS;
+    let page_par_posts:number= process.env.PAGE_PAR_POSTS as unknown as number
 
-    let posts =[]
+    let posts: _.List<any> | null | undefined =[]
 
     if ( Number(number) === 2) {
         posts = _.slice(allPosts, page_par_posts, page_par_posts * Number(number))
