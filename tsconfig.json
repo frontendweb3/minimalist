@@ -20,8 +20,10 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/components/*":["./components/*"],
-       "contentlayer/generated": ["./.contentlayer/generated",".contentlayer/generated"],
-       "@/utility/":["./utility/*"]
+      "contentlayer/generated": ["./.contentlayer/generated",".contentlayer/generated"],
+      "@/utility/":["./utility/*"],
+      "@/type":["./type.d.ts"]
+
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts",".contentlayer/generated"],
