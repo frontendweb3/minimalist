@@ -1,5 +1,6 @@
 ---
 id: 08
+type: Post
 title: Cillum cupidatat proident fugiat aute
 description: Ea commodo Lorem ea ex enim consectetur anim. Consectetur culpa duis irure quis elit dolor consectetur sunt eiusmod excepteur.
 date: 2022-11-20T07:05:27.346Z
@@ -12,7 +13,6 @@ category:
   - Cillum
 image : /images/eyes.png
 author: Linda Pittman
-slug: cillum-cupidatat-proident-fugiat-aute
 ---
 
 Cillum cupidatat proident fugiat aute. Ea commodo Lorem ea ex enim consectetur anim. Consectetur culpa duis irure quis elit dolor consectetur sunt eiusmod excepteur.

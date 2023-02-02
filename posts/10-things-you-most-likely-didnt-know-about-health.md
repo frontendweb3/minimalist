@@ -1,5 +1,6 @@
 ---
 id: 04
+type: Post
 title: 10 Things You Most Likely Didnt Know About Health.
 description: Culpa laboris aliquip ea consectetur mollit ea ipsum sint qui culpa laboris
   dolor adipisicing proident. Et officia consequat do nulla tempor cupidatat
@@ -14,7 +15,6 @@ category:
   - Health
 image: /images/vegetables.jpg
 author: Curtis Lopez
-slug: 10-things-you-most-likely-didnt-know-about-health
 ---
 Cupidatat voluptate deserunt non ea exercitation sit consequat ullamco ex nostrud elit magna. Nulla id proident labore pariatur pariatur ex ut ad enim et labore. Est do minim eiusmod culpa. Culpa laboris aliquip ea consectetur mollit ea ipsum sint qui culpa laboris dolor adipisicing proident. Et officia consequat do nulla tempor cupidatat elit. Consequat proident magna dolor labore et esse aute dolor sit ea.
 

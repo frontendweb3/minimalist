@@ -1,5 +1,6 @@
 ---
 id: 16
+type: Post
 title: Ten Reasons Why You Cannot Start Blog blogging
 description:  Quis irure ex ad nostrud quis reprehenderit in occaecat mollit mollit irure Lorem ullamco sit.
 date: 2022-05-08T07:33:48.882Z
@@ -12,7 +13,6 @@ category:
   - Blog
 image: /images/blogging.jpg
 author: Gregg Walker
-slug: ten-reasons-why-you-cannot-start-blog-blogging
 ---
 
 Incididunt aute elit voluptate irure do culpa aliquip occaecat commodo incididunt minim officia eiusmod. Eiusmod fugiat sunt consectetur officia fugiat qui exercitation. Magna laboris fugiat consequat elit sunt. Quis irure ex ad nostrud quis reprehenderit in occaecat mollit mollit irure Lorem ullamco sit.

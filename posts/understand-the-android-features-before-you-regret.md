@@ -1,5 +1,6 @@
 ---
 id: 20
+type: Post
 title: Understand The Android Features Before You Regret.
 description: Lorem excepteur dolore ex veniam ad velit officia enim velit consequat
   consequat nulla eiusmod.
@@ -12,7 +13,6 @@ category:
   - Android
 image: /images/android.jpg
 author: Linda Pittman
-slug: understand-the-android-features-before-you-regret
 ---
 Anim amet qui ullamco proident. Reprehenderit deserunt et amet fugiat elit. Eu irure excepteur nisi reprehenderit est ipsum mollit.
 

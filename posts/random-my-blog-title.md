@@ -1,5 +1,6 @@
 ---
 id: 12
+type: Post
 category:
   - Blog
 date: 2022-03-20T13:09:24Z
@@ -10,7 +11,6 @@ tags:
   - npm cli
   - npm install command
 title: Random blog Title for markdown.
-slug: random-blog-title-for-markdown
 draft: false
 author: Rajdeep Singh
 ---

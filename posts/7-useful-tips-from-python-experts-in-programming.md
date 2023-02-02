@@ -1,5 +1,6 @@
 ---
 id: 02
+type: Post
 title: 7 Useful Tips From Python Experts In Programming.
 description: Eiusmod quis esse aliqua sit nostrud aliquip sunt minim irure laboris
   reprehenderit irure ex
@@ -13,7 +14,6 @@ category:
   - Programming
 image: /images/software-developer.jpg
 author: Jeanne Ballard
-slug: 7-useful-tips-from-python-experts-in-programming
 ---
 Irure do do esse exercitation deserunt. Esse elit fugiat officia Lorem mollit dolore elit consectetur irure officia nostrud eiusmod non sunt. Velit cillum amet do veniam voluptate nisi. Eiusmod quis esse aliqua sit nostrud aliquip sunt minim irure laboris reprehenderit irure ex.
 

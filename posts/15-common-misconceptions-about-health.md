@@ -1,5 +1,6 @@
 ---
 id: 05
+type: Post
 title: 15 Common Misconceptions About Health.
 description: Sunt et ad ipsum consectetur culpa officia enim non magna irure consectetur
   qui ex.
@@ -12,7 +13,6 @@ category:
   - Health
 image: /images/health.jpg
 author: "DR. Jeffery Schwartz "
-slug: 15-common-misconceptions-health
 ---
 Qui quis consequat consequat voluptate elit excepteur tempor. Enim nisi incididunt est nostrud culpa aute id dolor. Do consectetur culpa pariatur nulla fugiat. Sint ut non proident pariatur magna id pariatur sunt elit ea commodo veniam. Mollit veniam occaecat consequat consectetur deserunt deserunt. Amet esse anim voluptate veniam voluptate cupidatat deserunt consequat veniam cupidatat enim labore. Aliquip quis irure esse nulla occaecat sint fugiat anim officia.
 

@@ -1,5 +1,6 @@
 ---
 id: 15
+type: Post
 title: Ten Features Of Smart Phone That Make Everyone Love It
 description: Ea nisi do cupidatat irure enim dolore velit cupidatat amet id et deserunt
   fugiat ex.
@@ -12,7 +13,6 @@ category:
   - Smart Phone
 image: /images/iphone.jpg
 author: Linda Pittman
-slug: ten-features-of-smart-phone-that-make-everyone-love-it
 ---
 
 Ut ullamco et aliqua fugiat quis Lorem aliquip in. Ut velit sunt ut aliquip cupidatat aliquip. Ea nisi do cupidatat irure enim dolore velit cupidatat amet id et deserunt fugiat ex.
