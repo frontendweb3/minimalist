@@ -7,17 +7,16 @@ import Script from 'next/script'
 export default function App({ Component, pageProps }: AppProps) {
 
   
-  return <>
-  
+  return (<>
             <Header />
 
             <Component {...pageProps} />
 
             <Footer />
 
-            <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></Script>
+            <Script src="/flowbite.min.js"></Script>
 
-              <Script dangerouslySetInnerHTML={{
+            <Script id='darkModeToggle' dangerouslySetInnerHTML={{
                 "__html":`var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
                 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
                 
@@ -60,9 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 });`
               }}>
 
-              </Script>
-
-
-          </> 
+            </Script>
+          </> )
 
 }
