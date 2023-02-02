@@ -5,7 +5,7 @@ import Card from '@/components/Card/Card';
 import Pagination from "@/components/Pagination/Pagination"
 import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
-import { paginateUtility, paginate } from '../../../utility/utility';
+import { paginateUtility, paginate,PAGE_PAR_POSTS } from '../../../utility/utility';
 import {IndexPage,Posts} from '@/type';
 
 
@@ -78,7 +78,7 @@ export async function getStaticProps(content: { params: { number: string; }; }) 
     let { params: { number } } = content
 
 
-    let page_par_posts:number= process.env.PAGE_PAR_POSTS as unknown as number
+    let page_par_posts:number= PAGE_PAR_POSTS  as number 
 
     let posts: _.List<any> | null | undefined =[]
 
