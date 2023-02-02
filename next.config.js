@@ -5,6 +5,7 @@ const { withContentlayer } = require('next-contentlayer')
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  basePath: '/minimalist',
   images: {
     unoptimized : true
   }
