@@ -4,10 +4,11 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { allPosts } from 'contentlayer/generated';
 import Link from 'next/link';
 import _ from 'lodash';
+import { AuthorPost,itemType} from '@/type';
 
-function Author({posts,authorName}) {
+
+function Author({posts,authorName}:{posts:AuthorPost,authorName:string[]}) {
     
-
     return (
         <>
             <div className='container mx-auto my-16'>
@@ -33,7 +34,7 @@ function Author({posts,authorName}) {
 
             <div className='grid grid-cols-1 md:grid-cols-2 md:gap-5 justify-items-center mx-auto my-16'>
                 {
-                    posts.map(item=><Card key={item.id}  item={item} />)
+                    posts.map((item:itemType)=><Card  key={item.id}  item={item} />)
                 }
                 
             </div>
@@ -58,8 +59,8 @@ export async function getStaticPaths() {
     }
 }
 
-// `getStaticPaths` requires using `getStaticProps`
-export async function getStaticProps({ params }: any) {
+
+export async function getStaticProps({ params }: {params:{slug:string}}) {
 
     let authorPost = _.filter(allPosts, function name(item) {
 
