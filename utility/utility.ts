@@ -27,5 +27,5 @@ export function paginate(){
 
     return paths
 }
-export const domain = 'http://localhost:3000/'
+export const domain = 'https://frontendweb3.github.io/minimalist/'
 export const PAGE_PAR_POSTS=8
