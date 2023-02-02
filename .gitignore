@@ -36,5 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Adding theb exit
+/authors/*
+old-contentlayer.config-copy.js
 /asset/*
 /.contentlayer/*
