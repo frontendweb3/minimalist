@@ -5,10 +5,10 @@ import { allPosts } from 'contentlayer/generated';
 import _ from 'lodash';
 import dayjs from "dayjs";
 import ReadMorePost from '@/components/ReadMorePost/ReadMorePost'
+import Image from 'next/image';
+import {ReadPage} from '@/type';
 
-
-function Read({ post, authorPost, pagination }) {
-
+function Read({ post, authorPost, pagination }:ReadPage) {
 
     return (
         <>
@@ -29,7 +29,7 @@ function Read({ post, authorPost, pagination }) {
 
                             <div className="inline-flex items-center text-sm text-gray-900 dark:text-white">
 
-                                <img className="mr-4 w-16 h-16 rounded-full" src={post.image} alt={post.author} />
+                                <Image width={'64'} height={'64'}  className="mr-4 w-16 h-16 rounded-full" src={post.image} alt={post.author} />
 
                                 <div className="flex flex-col">
 
@@ -102,10 +102,8 @@ function Read({ post, authorPost, pagination }) {
                 </ul>
             </div>
 
-
             {
                 authorPost ? <ReadMorePost posts={authorPost} /> : ""
-
             }
 
         </>
@@ -121,7 +119,9 @@ export async function getStaticPaths() {
     let paths: { params: { slug: string; }; }[] = []
 
     allPosts.map(
-        item => paths.push({ params: { slug: item.slug } })
+        item => {            
+            paths.push({ params: { slug: item.slug } })
+        }
     )
     return {
         paths: paths,
@@ -129,33 +129,29 @@ export async function getStaticPaths() {
     }
 }
 
-// `getStaticPaths` requires using `getStaticProps`
-export async function getStaticProps({ params }: any) {
 
-
-
-
+export async function getStaticProps({ params }: { params : {slug:string}}) {
 
     const getPaginationIndex = allPosts.findIndex((element) => element.slug === params.slug);
-
+    
 
     const pagination = {
-        next: allPosts[getPaginationIndex + 1] === null ? null : allPosts[getPaginationIndex + 1],
+        next: allPosts[getPaginationIndex + 1] === undefined ? null : allPosts[getPaginationIndex + 1],
         prev: getPaginationIndex === 0 ? null : allPosts[getPaginationIndex - 1]
     }
 
-    let post = _.filter(allPosts, function name(item) {
+    let post = _.filter(allPosts,  (item)=> {
 
         return item.slug === params.slug
 
     })
 
-    let authorPost = _.filter(allPosts, function name(item) {
+    let authorPost = _.filter(allPosts,  (item)=> {
 
         return item.author === post[0].author
 
-    })
-
+    })    
+    
     return {
         props: { post: post[0], authorPost, pagination },
     }
