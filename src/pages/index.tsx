@@ -5,16 +5,16 @@ import Card from '@/components/Card/Card';
 import Pagination from "@/components/Pagination/Pagination"
 import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
-import { paginate } from '../../utility/utility.ts';
+import { paginate } from '../../utility/utility';
+import { IndexPage, Posts} from '@/type';
 
-
-export default function Index({single,posts,pagination}) {
+export default function Index({single,posts,pagination}:IndexPage) {
 
 
   return (
     <>
       <NextSeo
-        title={"Minimalist -Template is a blog"}
+        title={" Minimalist - Template is a blog "}
         description={"The Minimalist template is a blog template built with nextjs and tailwind CSS. It provides a minimalist look for the reader and is made with modern technology, so you can easily extend and edit it."}
         canonical="https://www.rajdeepsingh.dev/"
         openGraph={{
@@ -32,9 +32,8 @@ export default function Index({single,posts,pagination}) {
           handle: '@handle',
           site: '@site',
           cardType: 'summary_large_image',
-        }} />
-
-
+        }} 
+      />
 
       <MainCard item={single} />
 
@@ -44,10 +43,11 @@ export default function Index({single,posts,pagination}) {
         
         {
           posts.map(
-            (item)=>{
-              
+            (item: Posts)=>{
               if (item.length !== 0) {
+
                 return <Card item={item} key={item.title} />
+                
               } 
             }
           )
@@ -65,7 +65,7 @@ export default function Index({single,posts,pagination}) {
 
 export async function getStaticProps() {
 
-  let page_par_posts= process.env.PAGE_PAR_POSTS;
+  let page_par_posts:number= process.env.PAGE_PAR_POSTS as unknown as number
 
   const posts =  _.slice(allPosts, 0, page_par_posts)
 
