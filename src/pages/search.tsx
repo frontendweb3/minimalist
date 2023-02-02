@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import Card from '@/components/Card/Card';
-
 import { allPosts } from 'contentlayer/generated';
+import { CardType,itemType } from '@/type';
 
-function search() {
+function Search() {
 
-    const [form, setForm] = useState({
+    const [form, setForm] = useState<{ query: string }>({
         query: '',
     });
 
-    const [queryPost, setQueryPost] = useState({
+    const [queryPost, setQueryPost] = useState<{ posts: CardType[] | undefined }>({
         posts: [],
     });
 
 
-    function changeText(event: { target: { value: any; }; }) {
+    function changeText(event: { target: { value: string; }; }) {
         setForm({
             query: event.target.value.trim().toLowerCase()
         })
@@ -25,10 +25,10 @@ function search() {
     function submitFunction() {
 
 
-        let total = allPosts.filter((item) => item.title.trim().toLowerCase().includes(form.query) === true)
-
+        let total:any = allPosts.filter(( item ) => item.title.trim().toLowerCase().includes(form.query) === true)        
+        
         setQueryPost({
-            posts : total
+            posts: total
         })
 
 
@@ -57,14 +57,14 @@ function search() {
 
 
                 {
-
-                    queryPost.posts? queryPost.posts?.map(
-                        item=>  <Card item={item} />
-                    ): ""
+                    queryPost.posts ? queryPost.posts?.map(
+                        (item) => <Card key={item.id} item={item} />
+                    ) : ""
                 }
+                
             </div>
         </div>
     )
 }
 
-export default search;
+export default Search;
