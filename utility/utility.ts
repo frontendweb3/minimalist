@@ -28,3 +28,4 @@ export function paginate(){
     return paths
 }
 export const domain = 'http://localhost:3000/'
+export const PAGE_PAR_POSTS=8
