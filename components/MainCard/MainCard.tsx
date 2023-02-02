@@ -1,6 +1,9 @@
 import Link from "next/link"
 import Image from 'next/image';
-export default function Card({item}) {
+import {MainType} from '@/type';
+export default function Card({item}:{item: MainType}) {
+
+  
 
   return (
     <>
@@ -16,7 +19,7 @@ export default function Card({item}) {
 
           <p className="mb-4 font-normal text-gray-700 dark:text-gray-400">{item.description}</p>
 
-          <Link href={`/read/${item.slug}`} className="text-center w-44 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 mr-2 my-3 dark:bg-gray-800 dark:focus:ring-gray-700 dark:border-gray-700">
+          <Link href={`${item.slug}`} className="text-center w-44 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 mr-2 my-3 dark:bg-gray-800 dark:focus:ring-gray-700 dark:border-gray-700">
             Read Now
           </Link>
         </div>
