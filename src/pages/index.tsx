@@ -65,7 +65,7 @@ export default function Index({single,posts,pagination}:IndexPage) {
 
 export async function getStaticProps() {
 
-  let page_par_posts:number= process.env.PAGE_PAR_POSTS as unknown as number
+  let page_par_posts:number= process.env.PAGE_PAR_POSTS as unknown as number 
 
   const posts =  _.slice(allPosts, 0, page_par_posts)
 
