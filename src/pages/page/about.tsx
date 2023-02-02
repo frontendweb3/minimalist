@@ -1,11 +1,12 @@
 import React from 'react'
 import { NextSeo } from 'next-seo';
-import Link from 'next/link';
+import Image from 'next/image';
 
 function About() {
   
     return (
         <>
+         
          <NextSeo
             title="About us"
             description="About us - here is my story"
@@ -23,7 +24,8 @@ function About() {
 
           </div>
 
-          <div style={{ backgroundImage: "url(https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx)" }} className="rounded-full h-[350px] w-[350px] bg-origin-content bg-cover bg-center bg-no-repeat p-2 m-3"></div>
+          <Image height={350} width={350} alt="here is" src={`/images/minimalist-logo.jpeg`} className="rounded-full bg-origin-content bg-cover bg-center bg-no-repeat p-2 m-3"/>
+
         </div>
 
       </>
