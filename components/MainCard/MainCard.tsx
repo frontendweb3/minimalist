@@ -31,3 +31,4 @@ export default function Card({item}:{item: MainType}) {
   )
 }
 
+
