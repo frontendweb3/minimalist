@@ -8,12 +8,14 @@ export default function Document() {
       <body className='bg-gray-100 dark:bg-gray-600'>
         <Main />
         <NextScript />
+        
         <Script
-          src="/flowbite.min.js"
-          strategy="beforeInteractive"
+          src="/minimalist/flowbite.min.js"
         />
-         <Script id='darkModeToggle' src="/darkmode.js"
-          strategy="beforeInteractive" />
+
+        <Script id='darkModeToggle' src="/minimalist/darkmode.js"
+        />
+
       </body>
     </Html>
   )
