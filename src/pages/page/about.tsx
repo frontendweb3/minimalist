@@ -7,10 +7,10 @@ function About() {
     return (
         <>
          
-         <NextSeo
-            title="About us"
-            description="About us - here is my story"
-        /> 
+          <NextSeo
+              title="About us"
+              description="About us - here is my story"
+          /> 
 
         <div className='bg-white dark:text-white dark:bg-gray-900 p-20 my-24  grid grid-cols-1  lg:grid-cols-2 justify-items-center items-center'>
 
