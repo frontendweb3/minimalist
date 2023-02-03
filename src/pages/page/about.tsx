@@ -24,7 +24,7 @@ function About() {
 
           </div>
 
-          <Image height={350} width={350} alt="here is" src={`/images/minimalist-logo.jpeg`} className="rounded-full bg-origin-content bg-cover bg-center bg-no-repeat p-2 m-3"/>
+          <Image height={350} width={350} alt="here is" src={`/minimalist/images/minimalist-logo.jpeg`} className="rounded-full bg-origin-content bg-cover bg-center bg-no-repeat p-2 m-3"/>
 
         </div>
 
