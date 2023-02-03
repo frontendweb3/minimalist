@@ -9,11 +9,11 @@ export default function Card({ item }: { item: CardType }) {
         <div className="w-full h-full bg-white dark:bg-gray-900">
             <div className="my-14 mx-0  md:mx-5 lg:mx-10 xl:mx-14 flex flex-col max-w-6xl max-h-xl">
 
-                <Image height={350} width={1224} alt={item.title} src={item.image} className="h-[450px] rounded-t-lg bg-origin-content bg-cover bg-no-repeat p-2 m-3 " />
+                <Image height={350} width={1224} alt={item.title} src={`minimalist${item.image}`} className="h-[450px] rounded-t-lg bg-origin-content bg-cover bg-no-repeat p-2 m-3 " />
 
                 <div className="p-5">
 
-                    <Link href={`${domain}read/${item.slug}`}>
+                    <Link href={`/read/${item.slug}`}>
                         <h5 className="mb-2 px-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             {item.title}
                         </h5>
