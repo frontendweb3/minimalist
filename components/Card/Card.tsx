@@ -13,7 +13,7 @@ export default function Card({ item }: { item: CardType }) {
 
                 <div className="p-5">
 
-                    <Link href={`/read/${item.slug}`}>
+                    <Link href={`read/${item.slug}`}>
                         <h5 className="mb-2 px-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             {item.title}
                         </h5>
@@ -57,14 +57,13 @@ export default function Card({ item }: { item: CardType }) {
                         <div id="dropdown" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                                 <li>
-                                    <Link href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</Link>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</Link>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bookmark us
-                                    </Link>
+                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bookmark us</Link>
                                 </li>
                             </ul>
                         </div>
