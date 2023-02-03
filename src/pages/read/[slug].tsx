@@ -16,7 +16,7 @@ function Read({ post, authorPost, pagination }:ReadPage) {
 
                 <div className="flex flex-col justify-between px-4 mx-auto max-w-screen-xl">
 
-                    <div style={{ backgroundImage: `url(${post?.image})` }} className="rounded-t-lg bg-fixed h-[650px] w-full bg-origin-content  bg-cover bg-no-repeat p-2"></div>
+                    <Image src={`/minimalist${post?.image}`} alt={post.title} height={650} width={1224} className="rounded-t-lg bg-fixed h-[650px] w-full bg-origin-content  bg-cover bg-no-repeat p-2" />
 
                     <article className="my-12 prose lg:prose-xl dark:prose-invert w-full mx-auto max-w-4xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
 
