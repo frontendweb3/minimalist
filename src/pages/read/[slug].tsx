@@ -29,7 +29,7 @@ function Read({ post, authorPost, pagination }:ReadPage) {
 
                             <div className="inline-flex items-center text-sm text-gray-900 dark:text-white">
 
-                                <Image width={'64'} height={'64'}  className="mr-4 w-16 h-16 rounded-full" src={post.image} alt={post.author} />
+                                <Image width={'64'} height={'64'}  className="mr-4 w-16 h-16 rounded-full" src={`/minimalist${post.image}`} alt={post.author} />
 
                                 <div className="flex flex-col">
 
