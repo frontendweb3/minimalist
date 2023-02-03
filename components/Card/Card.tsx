@@ -13,7 +13,7 @@ export default function Card({ item }: { item: CardType }) {
 
                 <div className="p-5">
 
-                    <Link href={`read/${item.slug}`}>
+                    <Link href={`/read/${item.slug}`}>
                         <h5 className="mb-2 px-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             {item.title}
                         </h5>
