@@ -7,7 +7,7 @@ export default function Footer() {
         
         <div className="container px-0 md:px-12 pb-6 flex flex-col sm:flex-row items-center justify-between mx-auto">
           
-          <Link href="https://flowbite.com/" className="flex items-center">
+          <Link href="https://github.com/frontendweb3" className="flex items-center">
            
             <svg width="50" height="128" className="mr-2"  viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="14" y="14" width="100" height="100" rx="50" fill="black"/>
@@ -40,7 +40,7 @@ export default function Footer() {
 
         <div className="container px-12 pt-6 flex flex-wrap items-center justify-between mx-auto">
           
-          <Link href="https://flowbite.com/" className="flex items-center dark:text-white">
+          <Link href="https://github.com/frontendweb3" className="flex items-center dark:text-white">
             Copyright @frontendweb
           </Link>
          
