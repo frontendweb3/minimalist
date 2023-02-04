@@ -5,12 +5,11 @@ import Card from '@/components/Card/Card';
 import Pagination from "@/components/Pagination/Pagination"
 import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
-import { paginateUtility, paginate,PAGE_PAR_POSTS } from '../../../utility/utility';
-import {IndexPage,Posts} from '@/type';
+import { IndexPage, Posts } from '@/type';
 
+import { paginateUtility, paginate, PAGE_PAR_POSTS } from '../../../utility/utility';
 
-export default function Index({ single,posts, pagination }:IndexPage) {
-
+export default function Index({ single, posts, pagination }: IndexPage) {    
 
     return (
         <>
@@ -37,9 +36,7 @@ export default function Index({ single,posts, pagination }:IndexPage) {
                 }}
             />
 
-
             <MainCard item={single} />
-
 
             <h2 className="container text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-10">All Article -</h2>
 
@@ -64,41 +61,44 @@ export default function Index({ single,posts, pagination }:IndexPage) {
     )
 }
 
-export async function getStaticPaths() {
 
-    return {
-        paths: _.drop(paginateUtility()),
-        fallback: false,
+// fetch all posts 
+export async function getStaticProps({params}: { params: { number: string; }; }) {
+
+    let totalPosts;
+    
+    if( Number(params.number) == 1 ){
+        totalPosts = _.slice(allPosts, 0, PAGE_PAR_POSTS)
+    } 
+
+
+    if( Number(params.number) == 2 ){
+      totalPosts = _.slice(allPosts, PAGE_PAR_POSTS, PAGE_PAR_POSTS * Number(params.number))
     }
-}
 
-export async function getStaticProps(content: { params: { number: string; }; }) {
-
-
-    let { params: { number } } = content
-
-
-    let page_par_posts:number= PAGE_PAR_POSTS  as number 
-
-    let posts: _.List<any> | null | undefined =[]
-
-    if ( Number(number) === 2) {
-        posts = _.slice(allPosts, page_par_posts, page_par_posts * Number(number))
-    }    
-
-    if (Number(number) >= 3) {
-
-        posts = _.slice(allPosts,  page_par_posts * ( Number(number) - 1 ), page_par_posts * (Number(number) + 1))
-
+    
+    if ( Number(params.number) >  2) {
+      totalPosts = _.slice(
+           allPosts, PAGE_PAR_POSTS*Number(params.number) - PAGE_PAR_POSTS,
+           PAGE_PAR_POSTS * Number(params.number)
+        )
     }
 
     let pagination = {
-        page_par_posts: page_par_posts,
         pageCount: paginate()
     }
 
     return {
-        props: { single: _.first(posts),  posts: _.drop(posts),pagination },
+        props: { single: _.first(totalPosts), posts: _.drop(totalPosts), pagination},
     }
+    
+}
+export async function getStaticPaths() {
 
+     return {
+       paths: _.drop(paginateUtility()),
+       fallback: false,
+     }
+     
+   
 }
