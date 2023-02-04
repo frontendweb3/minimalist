@@ -12,6 +12,7 @@ tags:
 category:
   - Smart Phone
 image: /images/iphone.jpg
+view: 39k
 author: 
     name: Linda Pittman
     type: Author

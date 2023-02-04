@@ -12,6 +12,7 @@ tags:
 category:
   - Blog
 image: /images/blogging.jpg
+view: 28k
 author: 
     name: Gregg Walker
     type: Author

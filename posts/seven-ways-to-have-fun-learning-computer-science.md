@@ -12,6 +12,7 @@ tags:
   - Have Fun
 category:
   - Computer Science
+view: 38k
 image: /images/fantasy-android.jpg
 author: 
     name: Linda Pittman

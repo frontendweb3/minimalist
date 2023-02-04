@@ -13,6 +13,7 @@ tags:
 category:
   - Programming
 image: /images/software-developer.jpg
+view: 22k
 author: 
    name: Jeanne Ballard
    type: Author

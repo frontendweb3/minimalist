@@ -11,6 +11,7 @@ tags:
   - Misconceptions
 category:
   - Health
+view: 19k
 image: /images/health.jpg
 author: 
     name: DR. Jeffery Schwartz

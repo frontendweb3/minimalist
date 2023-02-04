@@ -12,6 +12,7 @@ tags:
   - npm install command
 title: Random blog Title for markdown.
 draft: false
+view: 28k
 author: 
     name: Rajdeep Singh
     type: Author

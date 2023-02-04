@@ -13,6 +13,7 @@ tags:
 category:
   - Blog
 image: /images/blog-2.jpg
+view: 31k
 author: 
     name: Rajdeep Singh
     type: Author

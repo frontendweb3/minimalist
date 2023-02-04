@@ -13,6 +13,7 @@ tags:
 category:
   - Blog
 image: /images/blog.jpg
+view: 21k
 author:
   name: Ashley Paul
   type: Author

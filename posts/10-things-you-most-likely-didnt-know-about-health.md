@@ -14,6 +14,7 @@ tags:
 category:
   - Health
 image: /images/vegetables.jpg
+view: 24k
 author:
    name: Curtis Lopez
    type: Author

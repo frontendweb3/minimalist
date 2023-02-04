@@ -1,7 +1,7 @@
 ---
 id: 13
 type: Post
-title: Seven mind blowing Facts About Smart Phone.
+title: Seven mind blowing Facts About Smart Phone
 description: Ea qui quis ad mollit enim in nostrud officia nisi id aute anim non.
   Adipisicing aliqua amet adipisicing consequat eiusmod anim exercitation
   proident quis.
@@ -14,10 +14,11 @@ tags:
 category:
   - Smart Phone
 image: /images/ios.jpg
+view: 33k
 author:
     name: Hannah Rivera
     type: Author
-    image: "/images/women-4.jpg"
+    image: "/images/woman-4.jpg"
     bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
     job: software developer
     social: 

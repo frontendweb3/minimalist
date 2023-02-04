@@ -14,6 +14,7 @@ tags:
 category:
   - Tech
 image: /images/hanoi-natural.jpg
+view: 19k
 author:
     name: Ashley Paul
     type: Author

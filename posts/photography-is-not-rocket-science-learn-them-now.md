@@ -11,6 +11,7 @@ tags:
   - Photo
 category:
   - Photography
+view: 89k
 image: /images/smartphone.jpg
 author:
   name: Ashley Paul

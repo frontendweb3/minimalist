@@ -11,6 +11,7 @@ tags:
   - Tech
 category:
   - Computer Science
+view: 23k
 image: /images/computer.jpg
 author: 
    name: Emilio Tate

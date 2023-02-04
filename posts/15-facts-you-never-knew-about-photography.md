@@ -12,6 +12,7 @@ tags:
   - facts
 category:
   - Photography
+view: 18k
 image: /images/photographer.jpg
 author: 
    name: Jeanne Ballard
