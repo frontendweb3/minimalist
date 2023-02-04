@@ -1,4 +1,24 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+import { defineDocumentType, defineNestedType, makeSource } from 'contentlayer/source-files'
+
+const Social = defineNestedType(() => ({
+  name: 'Social',
+  fields: {
+    facebook: { type: 'string'},
+    twitter:  { type: 'string'},
+    linkedin: { type: 'string'},   
+  },
+}))
+
+const Author = defineNestedType(() => ({
+  name: 'Author',
+  fields: {
+    name:     { type: 'string', required: true },
+    job:      { type: 'string'},
+    bio:      { type: 'string'},
+    image:    { type: 'string', required: true },   
+    social:   { type:'nested', of: [Social]} 
+  },
+}))
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -35,10 +55,10 @@ export const Post = defineDocumentType(() => ({
       required: true,
     },
     author: {
-      type: 'string',
-      description: 'The author of the post',
-      required: true,
+      type: 'nested',
+      of: [Author],
     },
+
     date: {
       type: 'date',
       description: 'The date of the post',
@@ -58,68 +78,9 @@ export const Post = defineDocumentType(() => ({
   }
 }))
 
-// export const Author = defineDocumentType(() => ({
-//   name: 'Author',
-//   filePathPattern: `**/*.md`,
-//   fields: {
-//     name: {
-//       type: 'string',
-//       description: 'The title of the post',
-//       required: true,
-//     },
-//     description: {
-//       type: 'string',
-//       description: 'The description of the post',
-//     },
-//     date:{
-//       type:'date',
-//       description: 'the author account create date ',
-//       required:true
-//     },
-//     draft: {
-//       type: 'boolean',
-//       description: 'The draft of the post',
-//       required: true,
-//       default: true
-//     },
-//     tags: {
-//       type: 'list',
-//       of: { type: 'string' },
-//       description: 'The list of the post',
-//     },
-//     image: {
-//       type: 'string',
-//       description: 'The image of the post',
-//       required: true,
-//     },
-//     social: {
-//       type: 'list',
-//       description: 'The list of the social',
-//     },
-//     slug: {
-//       type: 'string',
-//       description: 'The date of the post',
-//       required: true,
-//     },
-//   },
-//   computedFields: {
-//     url: {
-//       type: 'string',
-//       resolve: (post) => `/posts/${post._raw.flattenedPath}`,
-//     },
-//   },
-// }))
+
 
 export default makeSource({
   contentDirPath: 'posts',
   documentTypes: [Post],
 })
-
-// export default makeSource({
-//   contentDirPath: '.',
-//   contentDirInclude:['posts'],
-//   documentTypes: [Post],
-
-//   contentDirPath: 'posts',
-//   documentTypes: [Post],
-// })
