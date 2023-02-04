@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {PaginationItem} from '@/type';
-function Pagination({pagination}:{pagination:PaginationItem}) {
- 
+
+function Pagination({pagination}:{ pagination:PaginationItem }) {
+
     const {query:{ number }} = useRouter()
 
     return (
