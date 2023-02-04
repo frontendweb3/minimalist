@@ -26,6 +26,6 @@
 
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts",".contentlayer/generated"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts",".contentlayer/generated", "components/Pagination/PaginationItem.js"],
   "exclude": ["node_modules"]
 }
