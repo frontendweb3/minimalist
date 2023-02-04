@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Footer />  
             
             <Script id='flowbite' src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js" />
-            <Script id='darkModeToggle' src="/darkmode.js"/>
+            <Script id='darkModeToggle' src="/minimalist/darkmode.js"/>
 
           </> 
         )
