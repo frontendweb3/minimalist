@@ -8,7 +8,17 @@ import ReadMorePost from '@/components/ReadMorePost/ReadMorePost'
 import Image from 'next/image';
 import {ReadPage} from '@/type';
 
+// author: {
+//     name: 'Jeanne Ballard',
+//     image: '/images/women-5.jpg',
+//     social: Array(2) [ 'https://www.facebook.com/officialrajdeepsingh', 'https://twitter.com/Official_R_deep' ],
+//     type: 'Author',
+//     _raw: {}
+//   },
+
 function Read({ post, authorPost, pagination }:ReadPage) {
+
+    
 
     return (
         <>
@@ -29,12 +39,12 @@ function Read({ post, authorPost, pagination }:ReadPage) {
 
                             <div className="inline-flex items-center text-sm text-gray-900 dark:text-white">
 
-                                <Image width={'64'} height={'64'}  className="mr-4 w-16 h-16 rounded-full" src={`/minimalist${post.image}`} alt={post.author} />
+                                <Image width={'64'} height={'64'}  className="mr-4 w-16 h-16 rounded-full" src={`/minimalist${post.author.image}`} alt={post.author.name} />
 
                                 <div className="flex flex-col">
 
-                                    <Link href={`/author/${post.author.trim().toLowerCase().replaceAll(" ","-")}`} rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
-                                        {post.author}
+                                    <Link href={`/author/${post.author.name.trim().toLowerCase().replaceAll(" ","-")}`} rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
+                                        {post.author.name}
                                     </Link>
 
                                     <div className="flex flex-col md:flex-row ">
