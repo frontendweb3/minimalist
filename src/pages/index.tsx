@@ -5,10 +5,10 @@ import Card from '@/components/Card/Card';
 import Pagination from "@/components/Pagination/Pagination"
 import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
-import { paginate,PAGE_PAR_POSTS } from '../../utility/utility';
-import { IndexPage, Posts} from '@/type';
+import { paginate, PAGE_PAR_POSTS } from '../../utility/utility';
+import { IndexPage, Posts } from '@/type';
 
-export default function Index({single,posts,pagination}:IndexPage) {
+export default function Index({ single, posts, pagination }: IndexPage) {
 
 
   return (
@@ -32,7 +32,7 @@ export default function Index({single,posts,pagination}:IndexPage) {
           handle: '@handle',
           site: '@site',
           cardType: 'summary_large_image',
-        }} 
+        }}
       />
 
       <MainCard item={single} />
@@ -40,22 +40,19 @@ export default function Index({single,posts,pagination}:IndexPage) {
       <h2 className="container text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-10">All Article -</h2>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-5 justify-items-center mx-auto'>
-        
+
         {
           posts.map(
-            (item: Posts)=>{
+            (item: Posts) => {
               if (item.length !== 0) {
 
                 return <Card item={item} key={item.title} />
-                
-              } 
+
+              }
             }
           )
         }
-
-        
       </div>
-
       <Pagination pagination={pagination} />
     </>
   )
@@ -65,16 +62,18 @@ export default function Index({single,posts,pagination}:IndexPage) {
 
 export async function getStaticProps() {
 
-  let page_par_posts:number= PAGE_PAR_POSTS  as number 
+  let page_par_posts: number = PAGE_PAR_POSTS as number
 
-  const posts =  _.slice(allPosts, 0, page_par_posts)
+  const posts = _.slice(allPosts, 0, page_par_posts)
 
+  
   let pagination = {
-    page_par_posts:page_par_posts,
+    page_par_posts: page_par_posts,
     pageCount: paginate()
   }
-
+  
   return {
-    props: { single: _.first(posts),  posts: _.drop(posts),pagination },
+    props: { single: _.first(posts), posts: _.drop(posts), pagination },
   }
+
 }
