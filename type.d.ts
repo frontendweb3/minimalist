@@ -167,4 +167,15 @@ export interface Post {
     slug: string;
 }
 
-// pagination
+// Author
+export interface AuthorType{ 
+    name?: string[]; 
+    job?: string | undefined; 
+    bio?: string | undefined; 
+    image?: string; 
+    social?: { 
+        facebook?: string ; 
+        twitter?: string ; 
+        linkedin?: string ; 
+    } 
+}
