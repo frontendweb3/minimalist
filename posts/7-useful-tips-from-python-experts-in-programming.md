@@ -13,7 +13,17 @@ tags:
 category:
   - Programming
 image: /images/software-developer.jpg
-author: Jeanne Ballard
+author: 
+   name: Jeanne Ballard
+   type: Author
+   image: /images/woman-5.jpg
+   bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+   job: software developer || writer
+   social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Irure do do esse exercitation deserunt. Esse elit fugiat officia Lorem mollit dolore elit consectetur irure officia nostrud eiusmod non sunt. Velit cillum amet do veniam voluptate nisi. Eiusmod quis esse aliqua sit nostrud aliquip sunt minim irure laboris reprehenderit irure ex.
 

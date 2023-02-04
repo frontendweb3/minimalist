@@ -12,7 +12,17 @@ tags:
 category:
   - Photography
 image: /images/smartphone.jpg
-author: Ashley Paul
+author:
+  name: Ashley Paul
+  type: Author
+  image: "/images/female2.jpg"
+  bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+  job: software developer
+  social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Anim excepteur reprehenderit excepteur sunt est ex incididunt reprehenderit laboris anim mollit ex ut. Cupidatat nisi deserunt veniam ipsum proident consequat anim ipsum in. Ex et reprehenderit dolor adipisicing anim culpa ipsum ea excepteur cupidatat labore.
 ## Elit consequat

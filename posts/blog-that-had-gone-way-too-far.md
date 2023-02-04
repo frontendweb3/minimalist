@@ -13,12 +13,22 @@ tags:
 category:
   - Blog
 image: /images/blog.jpg
-author: Ashley Paul
+author:
+  name: Ashley Paul
+  type: Author
+  image: "/images/female2.jpg"
+  bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+  job: software developer
+  social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Dolore ipsum minim dolore anim duis aliquip cupidatat excepteur. Laborum amet eiusmod voluptate amet. Ullamco cupidatat eu duis minim proident. Irure in pariatur adipisicing incididunt nulla qui. Id elit ea ullamco esse labore.
 
 Irure tempor nisi consequat et veniam ad est. Mollit mollit dolor velit minim magna. Quis cupidatat laborum nulla Lorem consectetur laborum occaecat nostrud mollit ex elit voluptate commodo est.
-![leaves](/images/leaves.jpg)
+![leaves](/minimalist//images/leaves.jpg)
 In dolor nostrud laborum aliqua aliquip irure consectetur non qui reprehenderit qui labore. Aute incididunt est excepteur irure Lorem in amet veniam sunt reprehenderit occaecat ea consequat cillum. Ut et esse exercitation cillum dolore Lorem nisi. Non minim ullamco cillum labore culpa excepteur amet Lorem culpa sit incididunt aute. In cillum proident magna officia in aute aliquip officia consequat. Do pariatur commodo excepteur proident ullamco elit ex irure eu.
 
 Culpa laborum consectetur ut laboris nisi excepteur adipisicing irure ex laborum duis culpa nisi reprehenderit. Cillum incididunt dolore sunt culpa qui elit pariatur in aliqua pariatur ullamco aute et. Ea consectetur id laboris sit quis exercitation.

@@ -9,11 +9,21 @@ draft: false
 tags:
   - 15 facts
   - Photography
-  - Jeanne Ballard facts
+  - facts
 category:
   - Photography
 image: /images/photographer.jpg
-author: Jeanne Ballard
+author: 
+   name: Jeanne Ballard
+   type: Author
+   image: /images/woman-5.jpg
+   bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+   job: software developer
+   social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Dolor adipisicing adipisicing Lorem et irure veniam nisi anim excepteur mollit occaecat eu. Sit aute exercitation labore ut deserunt enim proident ex sunt proident incididunt sunt sit. Ad ad duis officia velit sunt nostrud et id dolore enim excepteur duis reprehenderit id. Aliqua et culpa aute id in non ipsum velit deserunt pariatur ullamco. Nulla nostrud ea irure laboris anim et magna labore esse.
 

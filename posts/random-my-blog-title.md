@@ -12,7 +12,17 @@ tags:
   - npm install command
 title: Random blog Title for markdown.
 draft: false
-author: Rajdeep Singh
+author: 
+    name: Rajdeep Singh
+    type: Author
+    image: "/images/rajdeep-singh.png"
+    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+    job: software developer
+    social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 
 Laboris consequat elit ad excepteur. Ipsum duis amet dolore voluptate dolore consequat ullamco incididunt ullamco. Dolore laborum cupidatat dolor ipsum reprehenderit excepteur cupidatat dolore. 

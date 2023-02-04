@@ -12,7 +12,17 @@ tags:
 category:
   - Humans
 image: /images/humans.jpg
-author: DR. Jeffery Schwartz
+author:
+    name: DR. Jeffery Schwartz
+    type: Author
+    image: "/images/author-2.jpg"
+    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+    job: software developer
+    social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 
 Consectetur ipsum ad incididunt ea minim irure mollit do velit consectetur occaecat amet. Amet minim sint qui laboris. Esse ad in aute laboris est reprehenderit laboris consectetur nisi. Occaecat laboris exercitation eiusmod duis duis et. Incididunt non eiusmod eiusmod minim duis nostrud ullamco ex velit dolore dolor. Ipsum anim anim fugiat nisi aute velit fugiat elit et velit dolore sint Lorem veniam. Officia pariatur cillum commodo occaecat qui.

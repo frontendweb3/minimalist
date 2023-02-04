@@ -12,7 +12,17 @@ tags:
 category:
   - Photography
 image: /images/camera.jpg
-author: Jeanne Ballard
+author: 
+   name: Jeanne Ballard
+   type: Author
+   image: "/images/woman-5.jpg"
+   bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+   job: software developer
+   social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 
 **Officia labore** esse ex ullamco qui. Laboris nostrud id non fugiat ad. Excepteur minim quis qui aliqua sit amet sint amet dolor nisi aliquip id id mollit. Aliqua anim consectetur mollit do Lorem culpa. Pariatur adipisicing est incididunt deserunt nostrud exercitation reprehenderit ea sunt nostrud anim eu laboris. Cillum deserunt excepteur dolor nostrud nisi. Laborum occaecat magna est ex non est elit.

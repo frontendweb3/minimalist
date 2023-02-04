@@ -12,7 +12,18 @@ tags:
 category:
   - Blog
 image: /images/natural.jpg
-author: Annie Dean
+author: 
+    name: Annie Dean
+    type: Author
+    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+    job: software developer
+    image: /images/female1.jpg
+    social: 
+        type: Social
+        facebook: https://www.facebook.com/officialrajdeepsingh
+        twiiter: https://twitter.com/Official_R_deep
+        linkedin: https://www.linkedin.com/company/frontendweb/
+
 ---
 Culpa irure occaecat laboris consectetur magna. Adipisicing irure minim cupidatat in nulla et. In exercitation qui sit aliquip sint consectetur ex quis. Exercitation consequat ut eu ea occaecat quis ipsum exercitation adipisicing ut. Sunt minim ex elit sint cupidatat Lorem magna ad ad. 
 

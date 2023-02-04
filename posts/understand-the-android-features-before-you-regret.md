@@ -12,7 +12,17 @@ tags:
 category:
   - Android
 image: /images/android.jpg
-author: Linda Pittman
+author: 
+    name: Linda Pittman
+    type: Author
+    image: "/images/author-6.jpg"
+    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+    job: software developer
+    social: 
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Anim amet qui ullamco proident. Reprehenderit deserunt et amet fugiat elit. Eu irure excepteur nisi reprehenderit est ipsum mollit.
 

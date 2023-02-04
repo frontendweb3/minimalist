@@ -13,7 +13,17 @@ tags:
 category:
   - Programing
 image:  /images/code.jpg
-author: Jeffery Schwartz
+author: 
+    name: Jeffery Schwartz
+    type: Author
+    image: /images/author-2.jpg
+    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
+    job: software developer
+    social:
+      type: Social
+      facebook: https://www.facebook.com/officialrajdeepsingh
+      twiiter: https://twitter.com/Official_R_deep
+      linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Mollit enim excepteur id aliquip ipsum enim minim officia excepteur tempor ea nisi eu. Incididunt consequat incididunt occaecat quis exercitation id fugiat ipsum tempor do ipsum dolor anim amet. Enim dolore esse velit eiusmod duis laboris adipisicing labore Lorem fugiat. 
 
