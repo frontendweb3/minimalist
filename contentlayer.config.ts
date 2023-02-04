@@ -39,6 +39,10 @@ export const Post = defineDocumentType(() => ({
       required: true,
       default: true
     },
+    view: {
+      type: 'string',
+      description: 'The view of the post'
+    },
     tags: {
       type: 'list',
       of: { type: 'string' },
