@@ -8,14 +8,16 @@ import { AuthorPost, itemType,AuthorType } from '@/type';
 
 
 function Author({ posts, author }: { posts: AuthorPost, author: AuthorType }) {
-   
+    
         return (
         <>
             <div className='container mx-auto my-16'>
 
-                <h1 className="mb-4 capitalize text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`${author.name[0]}`} <span className="text-blue-600 dark:text-blue-500">
-                    {`${author.name[1]}`} {author.name[2] ? author.name[2] : "" }
-                    </span></h1>
+                <h1 className="mb-4 capitalize text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{`${author?.firstName}`} <span className="text-blue-600 dark:text-blue-500">
+                    {`${author?.lastName}`}
+                    </span>
+                </h1>
+
                 <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                     About the author is here, allways write unique for reader.
                 </p>
@@ -82,7 +84,8 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
         if (item.author?.name.trim().toLowerCase().replaceAll(" ", "-") === params.slug) {
 
             author = {
-                name: item.author?.name.trim().split(" "),
+                firstName: item.author?.name.trim().split(" ")[0],
+                lastName: item.author?.name.trim().split(" ")[1],
                 job: item.author?.job,
                 image: item.author?.image,
                 social: item.author?.social,
