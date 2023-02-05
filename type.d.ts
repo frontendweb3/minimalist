@@ -7,6 +7,7 @@ interface AllType {
     image: string;
     author: string;
     date: string;
+    view?:string;
     id: number;
     body: {
         raw: string;
@@ -169,7 +170,8 @@ export interface Post {
 
 // Author
 export interface AuthorType{ 
-    name?: string[]; 
+    firstName?: string;
+    lastName?:string; 
     job?: string | undefined; 
     bio?: string | undefined; 
     image?: string; 
