@@ -3,21 +3,33 @@ The Minimalist template is a blog template built with nextjs and tailwind CSS. I
 Check out the Minimalist template demo.
 
 
+
+[![Demo](./public/frontendweb3.github.io-2.png)](https://frontendweb3.github.io/minimalist/)
+
+
 ## Getting Started
 
-Firstly, download the minimalist template code for the GitHub repo using the following command:
+Firstly, download the nextjs minimalist template code for the GitHub repo using the following command:
 ```bash
 git clone https://github.com/frontendweb3/minimalist.git
 ```
 Then run your development server:
 
 ```bash
-npm run dev
-# or
+# step 1
+cd minimalist
+
+# step 2
+pnpm install 
+#  or 
+yarn install 
+
+# step 3
 yarn dev
-# or
+#    or
 pnpm dev
 ```
+> Before runing the local development `yarn dev` command make sure remove the  `basePath: '/minimalist',` configuration in `next.config.js` file. otherwise you see the blank screen. 
 
 Our primary stack for the minimalist template
 
