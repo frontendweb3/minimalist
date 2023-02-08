@@ -4,7 +4,7 @@ Check out the Minimalist template demo.
 
 
 
-[![Demo](./public/frontendweb3.github.io-2.png)](https://frontendweb3.github.io/minimalist/)
+[![Demo](/public/frontendweb3.github.io-2.png)](https://frontendweb3.github.io/minimalist/)
 
 
 ## Getting Started
