@@ -1,21 +1,17 @@
 # Security Policy
 
-## Supported Versions
+## Supported Packages
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+We are currenlty using following package for the minimalist template.
+
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 18.2.0  | react              |
+| 18.2.0  | react-dom          |
+| 13.1.4  | next               |
+| 0.3.0   | contentlayer       |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Report a vulnerability on officialrajdeepsingh@gmail.com email
