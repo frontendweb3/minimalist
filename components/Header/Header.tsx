@@ -15,12 +15,6 @@ export default function Header() {
 
         <Link href="/" className="flex items-center">
 
-          <svg width="60" height="128" className="mr-2" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="14" y="14" width="100" height="100" rx="50" fill="black" />
-            <path d="M64 29L81.3205 59H46.6795L64 29Z" fill="white" />
-            <path d="M46.8485 67.4071L81.4882 67.1048L64.4301 97.2548L46.8485 67.4071Z" fill="#FDFDFD" />
-          </svg>
-
           <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
         </Link>
 
