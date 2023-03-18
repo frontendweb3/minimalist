@@ -1,17 +1,16 @@
 import Link from "next/link"
 import Image from 'next/image';
-import {MainType} from '@/type';
-import { domain } from '../../utility/utility';
+import { MainType } from '@/type';
 
-export default function Card({item}:{item: MainType}) {
+export default function Card({ item }: { item: MainType }) {
 
   return (
     <>
       <div className="my-16 p-4 sm:6 md:p-20 lg:p-20 mx-auto flex flex-col items-center bg-white lg:flex-row md:max-w-full 
       justify-evenly dark:bg-gray-900">
 
-        <Image priority={true} width={475} height={570} className="h-full w-full lg:h-[370px] lg:w-[570px] lg:order-2 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" 
-        src={`/minimalist${item.image}`} alt={item.title} />
+        <Image priority={true} width={475} height={570} className="h-full w-full lg:h-[370px] lg:w-[570px] lg:order-2 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg"
+          src={item.image} alt={item.title} />
 
         <div className=" flex flex-col justify-between p-4 leading-normal">
 
