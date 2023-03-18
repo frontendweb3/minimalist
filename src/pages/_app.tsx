@@ -7,16 +7,13 @@ import Script from 'next/script'
 export default function App({ Component, pageProps }: AppProps) {
 
   return (
-          <>
-            <Header />
+    <>
+      <Header />
 
-            <Component {...pageProps} />
+      <Component {...pageProps} />
 
-            <Footer />  
-            
-            <Script id='flowbite' src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js" />
-            <Script id='darkModeToggle' src="/minimalist/darkmode.js"/>
+      <Footer />
 
-          </> 
-        )
+    </>
+  )
 }
