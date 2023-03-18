@@ -29,7 +29,7 @@ yarn dev
 #    or
 pnpm dev
 ```
-> Before runing the local development `yarn dev` command make sure remove the  `basePath: '/minimalist',` configuration in `next.config.js` file. otherwise you see the blank screen. 
+
 
 Our primary stack for the minimalist template
 
