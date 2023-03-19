@@ -1,16 +1,7 @@
 import React from 'react';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import {
-  HamburgerMenuIcon,
-  DotFilledIcon,
-  CheckIcon,
-  ChevronRightIcon,
-} from '@radix-ui/react-icons';
 
-const Dropdown = () => {
-  const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
-  const [urlsChecked, setUrlsChecked] = React.useState(false);
-  const [person, setPerson] = React.useState('pedro');
+function Dropdown() {
 
   return (
     <DropdownMenu.Root>
@@ -45,72 +36,16 @@ const Dropdown = () => {
 
         <DropdownMenu.Content className="min-w-[220px] bg-white rounded-md p-[5px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform] data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade" >
 
-          <DropdownMenu.Item className="
-            my-1
-            group
-            text-[15px]
-            leading-none 
-            text-white
-            rounded-[3px]
-            flex items-center 
-            dark:text-white 
-            bg-red-400
-            justify-center
-            p-3
-            relative
-            outline-none
-  
-            data-[disabled]:pointer-events-none
-
-            data-[highlighted]:bg-red-300
-            ">
-            Share
-          </DropdownMenu.Item>
-
-          <DropdownMenu.Item className="
-            my-1
-            group
-            text-[15px]
-            leading-none 
-            text-white
-            rounded-[3px]
-            flex items-center 
-            dark:text-white 
-            bg-red-400
-            justify-center
-            p-3
-            relative
-            outline-none
-  
-            data-[disabled]:pointer-events-none
-
-            data-[highlighted]:bg-red-300
-            ">
+          <DropdownMenu.Item className="my-1 group cursor-pointer text-[15px] leading-none text-white rounded-[3px] flex items-center  dark:text-white  bg-red-400 justify-center p-3 relative outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-red-300 ">
             Bookmark
           </DropdownMenu.Item>
 
-          <DropdownMenu.Item className="
-            my-1 
-            group
-            text-[15px]
-            leading-none 
-            text-white
-            rounded-[3px]
-            flex items-center 
-            dark:text-white 
-            bg-red-400
-            justify-center
-            p-3
-            relative
-            outline-none
-  
-            data-[disabled]:pointer-events-none
-
-            data-[highlighted]:bg-red-300
-               ">
+          <DropdownMenu.Item className="my-1 group cursor-pointer text-[15px] leading-none text-white rounded-[3px] flex items-center  dark:text-white  bg-red-400 justify-center p-3 relative outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-red-300 ">
+            Share
+          </DropdownMenu.Item>
+          <DropdownMenu.Item className="my-1 group cursor-pointer text-[15px] leading-none text-white rounded-[3px] flex items-center  dark:text-white  bg-red-400 justify-center p-3 relative outline-none data-[disabled]:pointer-events-none data-[highlighted]:bg-red-300 ">
             Report
           </DropdownMenu.Item>
-
         </DropdownMenu.Content>
 
       </DropdownMenu.Portal>
