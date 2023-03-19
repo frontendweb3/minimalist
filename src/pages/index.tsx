@@ -37,7 +37,7 @@ export default function Index({ single, posts, pagination }: IndexPage) {
 
       <MainCard item={single} />
 
-      <h2 className="container text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-10">All Article -</h2>
+      <h2 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white py-12 pl-16" >All Article -</h2>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-5 justify-items-center mx-auto'>
 
@@ -66,12 +66,12 @@ export async function getStaticProps() {
 
   const posts = _.slice(allPosts, 0, page_par_posts)
 
-  
+
   let pagination = {
     page_par_posts: page_par_posts,
     pageCount: paginate()
   }
-  
+
   return {
     props: { single: _.first(posts), posts: _.drop(posts), pagination },
   }
