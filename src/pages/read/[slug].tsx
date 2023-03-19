@@ -67,7 +67,7 @@ function Read({ post, authorPost, pagination }: ReadPage) {
         <ul className='flex flex-col items-center md:flex-row justify-center md:justify-between'>
 
 
-          <li className='bg-white flex flex-row py-4 px-5 items-center'>
+          <li className='bg-white text-black dark:bg-gray-700 dark:text-white flex flex-row py-4 px-5 items-center'>
 
 
 
@@ -84,7 +84,7 @@ function Read({ post, authorPost, pagination }: ReadPage) {
 
           </li>
 
-          <li className="bg-white mt-8 md:mt-0 flex flex-row py-4 px-5 items-center">
+          <li className="bg-white  text-black dark:bg-gray-700 dark:text-white mt-8 md:mt-0 flex flex-row py-4 px-5 items-center">
 
             {
               pagination.next !== null ? <>
