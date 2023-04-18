@@ -2,8 +2,6 @@ The Minimalist template is a blog template built with nextjs and tailwind CSS. I
 
 Check out the Minimalist template demo.
 
-
-
 [![Demo](/public/frontendweb3.github.io-2.png)](https://frontendweb3.github.io/minimalist/)
 
 
@@ -45,6 +43,7 @@ Additional package
 3. lodash
 4. react-icons
 5. flowbite
+6. fuse.js
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
