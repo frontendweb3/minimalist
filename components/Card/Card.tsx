@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CardType } from '@/type';
 import Image from "next/image"
 import Dropdown from "../Dropdown/Dropdown"
+
 export default function Card({ item }: { item: CardType }) {
 
   return (
@@ -27,7 +28,7 @@ export default function Card({ item }: { item: CardType }) {
               {item.view}
             </span>
 
-           <Dropdown /> 
+             <Dropdown />
 
           </div>
 
