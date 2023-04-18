@@ -18,9 +18,9 @@ Then run your development server:
 cd minimalist
 
 # step 2
-pnpm install 
+pnpm install
 #  or 
-yarn install 
+yarn install
 
 # step 3
 yarn dev
