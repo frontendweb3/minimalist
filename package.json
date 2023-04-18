@@ -20,6 +20,7 @@
     "dayjs": "^1.11.7",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.4",
+    "fuse.js": "^6.6.2",
     "lodash": "^4.17.21",
     "next": "13.1.4",
     "next-contentlayer": "^0.3.0",
