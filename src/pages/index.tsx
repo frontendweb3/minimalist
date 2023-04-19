@@ -7,6 +7,7 @@ import _ from 'lodash';
 import { allPosts } from 'contentlayer/generated';
 import { paginate, PAGE_PAR_POSTS } from '../../utility/utility';
 import { IndexPage, Posts } from '@/type';
+// import { allPosts, Post } from 'contentlayer/generated'
 
 export default function Index({ single, posts, pagination }: IndexPage) {
 
@@ -59,13 +60,11 @@ export default function Index({ single, posts, pagination }: IndexPage) {
 }
 
 
-
 export async function getStaticProps() {
 
   let page_par_posts: number = PAGE_PAR_POSTS as number
 
   const posts = _.slice(allPosts, 0, page_par_posts)
-
 
   let pagination = {
     page_par_posts: page_par_posts,
