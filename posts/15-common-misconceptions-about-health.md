@@ -22,7 +22,7 @@ author:
     social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Qui quis consequat consequat voluptate elit excepteur tempor. Enim nisi incididunt est nostrud culpa aute id dolor. Do consectetur culpa pariatur nulla fugiat. Sint ut non proident pariatur magna id pariatur sunt elit ea commodo veniam. Mollit veniam occaecat consequat consectetur deserunt deserunt. Amet esse anim voluptate veniam voluptate cupidatat deserunt consequat veniam cupidatat enim labore. Aliquip quis irure esse nulla occaecat sint fugiat anim officia.

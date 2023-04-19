@@ -22,7 +22,7 @@ author:
     social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Anim amet qui ullamco proident. Reprehenderit deserunt et amet fugiat elit. Eu irure excepteur nisi reprehenderit est ipsum mollit.

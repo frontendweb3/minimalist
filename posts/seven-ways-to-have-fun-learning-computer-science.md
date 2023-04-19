@@ -23,7 +23,7 @@ author:
     social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 In do officia nostrud elit. Voluptate cillum et labore eiusmod do esse veniam. Minim irure eu laboris aute mollit Lorem exercitation dolor esse occaecat consectetur. 

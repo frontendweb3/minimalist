@@ -24,7 +24,7 @@ author:
    social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Cupidatat voluptate deserunt non ea exercitation sit consequat ullamco ex nostrud elit magna. Nulla id proident labore pariatur pariatur ex ut ad enim et labore. Est do minim eiusmod culpa. Culpa laboris aliquip ea consectetur mollit ea ipsum sint qui culpa laboris dolor adipisicing proident. Et officia consequat do nulla tempor cupidatat elit. Consequat proident magna dolor labore et esse aute dolor sit ea.

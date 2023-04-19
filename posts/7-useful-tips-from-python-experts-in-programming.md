@@ -23,7 +23,7 @@ author:
    social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Irure do do esse exercitation deserunt. Esse elit fugiat officia Lorem mollit dolore elit consectetur irure officia nostrud eiusmod non sunt. Velit cillum amet do veniam voluptate nisi. Eiusmod quis esse aliqua sit nostrud aliquip sunt minim irure laboris reprehenderit irure ex.

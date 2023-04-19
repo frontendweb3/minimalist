@@ -22,7 +22,7 @@ author:
   social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Anim excepteur reprehenderit excepteur sunt est ex incididunt reprehenderit laboris anim mollit ex ut. Cupidatat nisi deserunt veniam ipsum proident consequat anim ipsum in. Ex et reprehenderit dolor adipisicing anim culpa ipsum ea excepteur cupidatat labore.

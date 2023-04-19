@@ -24,7 +24,7 @@ author:
     social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Qui nulla sint consectetur et veniam. Consequat magna duis ea esse culpa quis. Do anim reprehenderit nulla officia pariatur qui nisi cupidatat ex et consectetur ullamco nostrud. Et ipsum occaecat ea labore adipisicing in aute est ipsum cillum. Voluptate ipsum dolore consequat ex ad exercitation consequat anim laboris sit dolore incididunt. Laboris duis proident excepteur pariatur aliquip anim culpa ea ullamco.

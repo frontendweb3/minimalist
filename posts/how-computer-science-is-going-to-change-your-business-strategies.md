@@ -22,7 +22,7 @@ author:
    social: 
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
-      twiiter: https://twitter.com/Official_R_deep
+      twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
 Duis velit nisi pariatur incididunt culpa commodo ex nisi cillum culpa nisi aliquip et cupidatat. Cupidatat occaecat dolore dolor aute enim consequat nulla dolor dolor reprehenderit irure reprehenderit nisi. Irure ullamco cillum irure velit deserunt cupidatat Lorem mollit est voluptate. 
