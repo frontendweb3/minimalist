@@ -32,7 +32,7 @@ Deserunt sunt nulla mollit reprehenderit ad deserunt ullamco dolore id laboris r
 Et duis sit qui velit velit amet esse cupidatat veniam Lorem amet est irure dolore. Exercitation nulla laboris qui et sunt anim mollit sit ipsum. Excepteur ea veniam enim do excepteur magna amet. Veniam aliquip enim do voluptate incididunt et aliqua id ipsum eu. Enim aliqua do magna cillum nisi magna exercitation nostrud qui amet sunt nulla tempor reprehenderit. Voluptate excepteur veniam elit dolore labore sint. Tempor voluptate enim nostrud fugiat.
 
 Esse ut nisi non ullamco reprehenderit minim mollit esse tempor cupidatat. Commodo ea irure eu veniam elit cillum dolor in magna fugiat sit et. Sit nulla adipisicing anim aliquip. Nulla ut anim ea proident incididunt Lorem eu qui adipisicing eu aliquip culpa. Cillum pariatur aliqua anim eiusmod sit qui ad id sunt consectetur eu. Et proident esse cillum veniam sit. Dolore amet ipsum culpa culpa id nostrud laboris ex ullamco sunt.
-![desktop](/minimalist/images/desk-desktop.jpg)
+![desktop](/images/desk-desktop.jpg)
 
 Veniam dolor anim sint non non. Labore non mollit do ut. Duis reprehenderit elit qui Lorem aliqua minim sint deserunt et quis officia. Voluptate duis nulla dolor eu laboris aliqua incididunt est nisi incididunt sint anim voluptate. Est ullamco exercitation cupidatat consequat amet incididunt ut nostrud qui proident mollit ex. Consectetur amet dolor ex veniam tempor. Qui anim pariatur eu amet.
 
