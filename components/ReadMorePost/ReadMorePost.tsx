@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '@/components/Card/Card';
-import { Posts } from '@/type';
-function ReadMorePost({ posts }: { posts: Posts }) {
+import type { Post } from 'contentlayer/generated'
+
+function ReadMorePost({ posts }: { posts: Post[] }) {
 
   return (
     <div className="container my-10 mx-auto">
@@ -10,7 +11,7 @@ function ReadMorePost({ posts }: { posts: Posts }) {
 
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-5 justify-items-center mx-auto'>
         {
-          posts.map((item: Posts) => <Card key={item.id} item={item} />)
+          posts.map((item: Post) => <Card key={item.id} item={item} />)
         }
       </div>
 
