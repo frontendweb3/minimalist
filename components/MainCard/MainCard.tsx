@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Image from 'next/image';
-import { MainType } from '@/type';
+import { type Post } from 'contentlayer/generated';
 
-export default function Card({ item }: { item: MainType }) {
+
+export default function Card({ item }: { item: Post }) {
 
   return (
     <>
@@ -14,7 +15,10 @@ export default function Card({ item }: { item: MainType }) {
 
         <div className=" flex flex-col justify-between p-4 leading-normal">
 
-          <p className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"> {item.tags[0]}</p>
+          {
+            item?.tags !== undefined ? <p className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"> {item?.tags[0]}</p> : ""
+          }
+
 
           <h2 className="mb-3 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{item.title}</h2>
 
