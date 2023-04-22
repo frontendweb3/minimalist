@@ -26,7 +26,7 @@ author:
       twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
-In do officia nostrud elit. Voluptate cillum et labore eiusmod do esse veniam. Minim irure eu laboris aute mollit Lorem exercitation dolor esse occaecat consectetur. 
+In do officia nostrud elit. Voluptate cillum et labore eiusmod do esse veniam. Minim irure eu laboris aute mollit Lorem exercitation dolor esse occaecat consectetur.
 
 Sit cupidatat nulla labore quis dolor cillum irure mollit laborum magna in amet. Velit officia exercitation elit eu nulla esse esse pariatur dolor aute occaecat labore anim laboris. Quis eu excepteur nisi pariatur officia. Sit id dolore ullamco est ullamco excepteur tempor.
 

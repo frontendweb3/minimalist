@@ -21,12 +21,13 @@ author:
     image: "/images/woman-4.jpg"
     bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
     job: software developer
-    social: 
+    social:
       type: Social
       facebook: https://www.facebook.com/officialrajdeepsingh
       twitter: https://twitter.com/Official_R_deep
       linkedin: https://www.linkedin.com/company/frontendweb/
 ---
+
 Ea qui quis ad mollit enim in nostrud officia nisi id aute anim non. Adipisicing aliqua amet adipisicing consequat eiusmod anim exercitation proident quis. Proident incididunt veniam minim pariatur est aliquip tempor elit enim duis sint nulla.
 
 Officia aliquip eu nisi culpa quis aute tempor. Cupidatat consequat anim aute do magna Lorem pariatur eiusmod qui veniam commodo ullamco quis. Culpa occaecat et exercitation exercitation do non amet fugiat sint consequat incididunt mollit. Magna id non nisi eiusmod consectetur exercitation Lorem voluptate sit sunt adipisicing sint voluptate. Officia minim reprehenderit sint tempor laboris eu nisi eu proident. Magna nisi et ipsum laborum adipisicing do consequat eiusmod. Ullamco eu eu sit aute veniam incididunt pariatur.
