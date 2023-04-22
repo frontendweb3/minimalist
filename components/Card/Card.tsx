@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { CardType } from '@/type';
 import Image from "next/image"
 import Dropdown from "../Dropdown/Dropdown"
+// import { type Post } from 'contentlayer/generated';
+import type { Post, DocumentTypes } from 'contentlayer/generated'
 
-export default function Card({ item }: { item: CardType }) {
+export default function Card({ item }: { item: DocumentTypes | Post }) {
 
   return (
     <div className="w-full h-full bg-white dark:bg-gray-900">
@@ -28,7 +29,7 @@ export default function Card({ item }: { item: CardType }) {
               {item.view}
             </span>
 
-             <Dropdown />
+            <Dropdown />
 
           </div>
 
