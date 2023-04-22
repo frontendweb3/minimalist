@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import Card from '@/components/Card/Card';
-import { type SearchItem } from '@/type';
 import { searchWithFuse } from "@/components/useFuse";
-// import { type Post } from 'contentlayer/generated'
+
 
 function Search() {
 
   const [query, setQuery] = useState("");
 
-  const result: SearchItem[] = searchWithFuse(query)
+  const result = searchWithFuse(query)
 
   return (
 
@@ -27,7 +26,7 @@ function Search() {
       <div className='my-16 grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-5 justify-items-center mx-auto'>
 
         {
-          result ? result?.map(({ item }) => <Card key={item.id} item={item} />) : ""
+          result ? result?.map((result) => <Card key={result.item.id} item={result.item} />) : ""
         }
 
       </div>
