@@ -6,9 +6,9 @@ import _ from 'lodash';
 import dayjs from "dayjs";
 import ReadMorePost from '@/components/ReadMorePost/ReadMorePost'
 import Image from 'next/image';
-import { ReadPage } from '@/type';
+import type { Post } from 'contentlayer/generated';
 
-function Read({ post, authorPost, pagination }: ReadPage) {
+function Read({ post, authorPosts, pagination }: { post: Post; authorPosts: Post[]; pagination: { next: Post; prev: Post; } }) {
 
 
   return (
@@ -30,12 +30,14 @@ function Read({ post, authorPost, pagination }: ReadPage) {
 
               <div className="inline-flex items-center text-sm text-gray-900 dark:text-white">
 
-                <Image width={'64'} height={'64'} className="mr-4 w-16 h-16 rounded-full" src={post.author.image} alt={post.author.name} />
+                {
+                  post.author !== undefined ? <Image width={'64'} height={'64'} className="mr-4 w-16 h-16 rounded-full" src={post?.author.image} alt={post?.author.name} /> : " "
+                }
 
                 <div className="flex flex-col">
 
-                  <Link href={`/author/${post.author.name.trim().toLowerCase().replaceAll(" ", "-")}`} rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
-                    {post.author.name}
+                  <Link href={`/author/${post.author?.name.trim().toLowerCase().replaceAll(" ", "-")}`} rel="author" className="text-xl font-bold no-underline text-gray-900 dark:text-white">
+                    {post.author?.name}
                   </Link>
 
                   <div className="flex flex-col md:flex-row ">
@@ -66,45 +68,35 @@ function Read({ post, authorPost, pagination }: ReadPage) {
 
         <ul className='flex flex-col items-center md:flex-row justify-center md:justify-between'>
 
-
-          <li className='bg-white text-black dark:bg-gray-700 dark:text-white flex flex-row py-4 px-5 items-center'>
-
-
-
-            {
-              pagination.prev !== null ? <>
+          {
+            pagination.prev !== null ? <>
+              <li className='bg-white text-black dark:bg-gray-700 dark:text-white flex flex-row py-4 px-5 items-center'>
                 <BsArrowLeft className="mr-1" />
                 Previous :
                 <Link href={pagination.prev.slug}>
                   {pagination.prev.title}
                 </Link>
-              </> : ''
-            }
+              </li>
+            </> : ''
+          }
 
-
-          </li>
-
-          <li className="bg-white  text-black dark:bg-gray-700 dark:text-white mt-8 md:mt-0 flex flex-row py-4 px-5 items-center">
-
-            {
-              pagination.next !== null ? <>
+          {
+            pagination.next !== null ? <>
+              <li className="bg-white text-black dark:bg-gray-700 dark:text-white mt-8 md:mt-0 flex flex-row py-4 px-5 items-center">
                 Next :
                 <Link href={pagination.next.slug}>
                   {pagination.next.title}
                 </Link>
-              </> : ""
-            }
-
-
-
-            <BsArrowRight className="ml-1" />
-          </li>
+                <BsArrowRight className="ml-1" />
+              </li>
+            </> : ""
+          }
 
         </ul>
       </div>
 
       {
-        authorPost ? <ReadMorePost posts={authorPost} /> : ""
+        authorPosts ? <ReadMorePost posts={authorPosts} /> : ""
       }
 
     </>
