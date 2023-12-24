@@ -9,32 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.4",
-    "@radix-ui/react-dropdown-menu": "^2.0.4",
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/lodash": "^4.14.194",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "contentlayer": "^0.3.1",
-    "dayjs": "^1.11.7",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.4",
-    "fuse.js": "^6.6.2",
+    "@next/font": "14.0.4",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "contentlayer": "^0.3.4",
+    "dayjs": "^1.11.10",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "fuse.js": "^7.0.0",
     "lodash": "^4.17.21",
-    "next": "13.1.4",
-    "next-contentlayer": "^0.3.1",
-    "next-seo": "^5.15.0",
+    "next": "14.0.4",
+    "next-contentlayer": "^0.3.4",
+    "next-seo": "^6.4.0",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "typescript": "4.9.4"
+    "react-icons": "^4.12.0",
+    "typescript": "5.3.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "flowbite": "^1.6.5",
-    "flowbite-react": "^0.3.8",
-    "tailwindcss": "^3.3.1"
+    "autoprefixer": "^10.4.16",
+    "flowbite": "^2.2.1",
+    "flowbite-react": "^0.7.2",
+    "tailwindcss": "^3.4.0"
   }
 }
