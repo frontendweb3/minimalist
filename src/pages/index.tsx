@@ -56,8 +56,6 @@ export async function getStaticProps() {
 
   const posts: Post[] = _.slice(allPosts, 0, page_par_posts)
 
-  console.log(posts)
-
   let pagination = {
     page_par_posts: page_par_posts,
     pageCount: paginate()
