@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button"
 import { SendHorizontal } from "lucide-react"
 import type { Metadata } from 'next'
- 
+
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Contact us - Built Minimalist website.',
@@ -28,7 +28,7 @@ export default function Contact() {
         </div>
 
         <Button>
-          <SendHorizontal /> Submit Message
+          <SendHorizontal /> Submit Your Message
         </Button>
 
       </form>
