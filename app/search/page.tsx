@@ -22,7 +22,7 @@ export default function Search() {
     <section className="py-32">
       <div className="container grid w-full max-w-lg items-center gap-4">
           <Label htmlFor="default-search">Search Your Articles</Label>
-          <Input onChange={(event) => setQuery(event.target.value)} type="text" id="default-search" required={true} placeholder=" Type your keywork" />
+          <Input className="rounded-sm" onChange={(event) => setQuery(event.target.value)} type="text" id="default-search" required={true} placeholder=" Type your keywork" />
       </div>
 
       <div className="container mt-24 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
