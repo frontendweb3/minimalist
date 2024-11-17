@@ -10,9 +10,9 @@ export function Hero() {
 
   const post = allPosts[0]
   return (
-    <Card className="container relative py-24">
+    <Card className="container relative py-24 rounded-sm">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center">
-        <div className="w-full rounded-xl lg:w-1/2 lg:max-w-lg">
+        <div className="w-full rounded-sm lg:w-1/2 lg:max-w-lg">
           <Image priority={true} width={475} height={570} className="mx-auto rounded-lg object-cover object-center" src={post.image} alt={post.title} />
         </div>
         <div className="mb-16 mt-12 flex flex-col items-start text-left md:mb-0 lg:w-1/2 lg:grow lg:pl-6 xl:mt-0 xl:pl-24">
