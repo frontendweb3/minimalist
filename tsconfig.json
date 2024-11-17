@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "lib": [
+      "es6",
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
@@ -18,14 +23,36 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/components/*":["./components/*"],
-      "contentlayer/generated": ["./.contentlayer/generated",".contentlayer/generated"],
-      "@/utility/":["./utility/*"],
-      "@/type":["./type.d.ts"]
-
+      "@/components/*": [
+        "./components/*"
+      ],
+      "contentlayer/generated": [
+        "./.contentlayer/generated",
+        ".contentlayer/generated"
+      ],
+      "@/lib/": [
+        "./lib/*"
+      ],
+      "@/type": [
+        "./type.d.ts"
+      ]
     },
+    "target": "ES2017",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utility/utility.ts",".contentlayer/generated"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".contentlayer/generated",
+    "next-env.d.ts",
+    "utility/utility.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
