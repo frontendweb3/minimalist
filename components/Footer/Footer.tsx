@@ -1,60 +1,81 @@
-import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+"use client"
 
-export default function Footer() {
+import * as React from "react"
+import Link from "next/link"
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList
+} from "@/components/ui/navigation-menu"
+import { Button } from "@/components/ui/button"
+import { Facebook } from "@/components/icons/facebook"
+import { Twitter } from "@/components/icons/twitter"
+import { Github } from "@/components/icons/github"
+import { Instagram } from "@/components/icons/instagram"
+
+export function Footer() {
   return (
-    <footer className="bg-white px-2 sm:px-4 py-4 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <footer className="block border-t border-gray-200">
+      {/* Container */}
+      <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
+        {/* Component */}
+        <div className="flex-col flex items-center">
 
-      <div className="container px-0 md:px-12 pb-6 flex flex-col sm:flex-row items-center justify-between mx-auto">
+          <Link href="/" className="mb-5 flex items-center">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
+          </Link>
 
-        <Link href="/" className="flex items-center">
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
-        </Link>
+          <NavigationMenu>
+            <NavigationMenuList className="text-center font-semibold gap-1 flex-wrap">
 
-        <ul className="flex flex-row">
+              <NavigationMenuItem>
+                <Link href="#" legacyBehavior passHref>
+                  <Button variant="link"> About </Button>
+                </Link>
+              </NavigationMenuItem>
 
-          <li>
-            <Link href="/" className="block py-2 pl-3 pr-4 text-black rounded bg-transparent dark:text-white" aria-current="page">Home</Link>
-          </li>
+              <NavigationMenuItem>
+                <Link href="#" legacyBehavior passHref>
+                  <Button variant="link"> Features </Button>
+                </Link>
+              </NavigationMenuItem>
 
-          <li>
-            <Link href="/page/about" className="block py-2 pl-3 pr-4 text-gray-700 rounded 
-                bg-transparent  dark:text-white">About</Link>
-          </li>
 
-          <li>
-            <Link href="/page/contact" className="block py-2 pl-3 pr-4 text-gray-700 rounded 
-                bg-transparent  dark:text-white">Contact</Link>
-          </li>
+              <NavigationMenuItem>
+                <Link href="/contact" legacyBehavior passHref>
+                  <Button variant="link"> Work </Button>
+                </Link>
+              </NavigationMenuItem>
 
-        </ul>
 
-      </div>
+              <NavigationMenuItem>
+                <Link href="/contact" legacyBehavior passHref>
+                  <Button variant="link"> Support </Button>
+                </Link>
+              </NavigationMenuItem>
 
-      <div className="container px-12 pt-6 flex flex-wrap items-center justify-between mx-auto">
 
-        <Link href="https://github.com/frontendweb3" className="flex items-center dark:text-white">
-          Copyright @frontendweb
-        </Link>
+              <NavigationMenuItem>
+                <Link href="/contact" legacyBehavior passHref>
+                  <Button variant="link"> Help </Button>
+                </Link>
+              </NavigationMenuItem>
 
-        <div className="flex md:order-2">
+            </NavigationMenuList>
+          </NavigationMenu>
 
-          <div className="flex-row flex md:flex">
-            <Link target="_blank" className="ml-3" href={'https://www.facebook.com/officialrajdeepsingh'}>
-              <FaFacebookF className="dark:text-white" />
-            </Link>
-            <Link target="_blank" className="ml-3" href={'https://twitter.com/Official_R_deep'}>
-              <FaTwitter className="dark:text-white" />
-            </Link>
-            <Link target="_blank" className="ml-3" href={'https://www.linkedin.com/in/officalrajdeepsingh/'}>
-              <FaLinkedinIn className="dark:text-white" />
-            </Link>
+          <div className="mb-8 mt-8 border-b border-gray-300 w-48"></div>
+          <div className="mb-12 flex flex-row  justify-center items-center w-full gap-5">
+            <Button variant="link"> <Facebook /> </Button>
+            <Button variant="link"> <Instagram /> </Button>
+            <Button variant="link"> <Twitter /> </Button>
+            <Button variant="link"> <Github /> </Button>
           </div>
-
+          <p className="text-sm sm:text-base">
+            © Copyright 2021. All rights reserved.
+          </p>
         </div>
-
       </div>
-
     </footer>
   )
 }
