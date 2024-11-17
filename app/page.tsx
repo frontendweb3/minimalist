@@ -4,8 +4,8 @@ import { Hero } from "@/components/Hero/Hero"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'Home - Minimalist template',
+  title: 'Home | Minimalist',
+  description: 'Minimalist is template for blog built with nextjs, shadcn ui and tailwind css.',
 }
 
 export default function Page() {
@@ -25,7 +25,12 @@ export default function Page() {
 
         <Hero />
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {allPosts.map((item) => <Card key={item.id} item={item} />)}
+          {allPosts.map((item, index) => {
+            // remove the fisrt post
+            if (index !== 0) {
+              return <Card key={item.id} item={item} />
+            }
+          })}
         </div>
       </div>
     </section>
