@@ -59,7 +59,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require("flowbite/plugin"),
     require("tailwindcss-animate")
 ],
 }
