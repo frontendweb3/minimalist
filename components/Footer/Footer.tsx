@@ -12,6 +12,7 @@ import { Facebook } from "@/components/icons/facebook"
 import { Twitter } from "@/components/icons/twitter"
 import { Github } from "@/components/icons/github"
 import { Instagram } from "@/components/icons/instagram"
+import { Sparkles } from "lucide-react"
 
 export function Footer() {
   return (
@@ -22,7 +23,9 @@ export function Footer() {
         <div className="flex-col flex items-center">
 
           <Link href="/" className="mb-5 flex items-center">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
+            <Button variant="link" className="[&_svg]:size-8 stroke">
+              <Sparkles size={30} strokeWidth={1.2} /> <span className="self-center text-2xl font-semibold whitespace-nowrap">Minimalist</span>
+            </Button>
           </Link>
 
           <NavigationMenu>

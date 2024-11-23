@@ -7,7 +7,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { Button } from "@/components/ui/button"
 import { Lock, Search } from "lucide-react"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
-
+import { Sparkles } from 'lucide-react';
 
 export function Header() {
   return (
@@ -16,7 +16,9 @@ export function Header() {
       <div className="container flex gap-4 flex-wrap items-center justify-around md:justify-between mx-auto">
 
         <Link href="/" className="flex items-center">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Minimalist</span>
+          <Button variant="link" className="[&_svg]:size-8 stroke">
+            <Sparkles size={30} strokeWidth={1.2} /> <span className="self-center text-2xl font-semibold whitespace-nowrap">Minimalist</span>
+          </Button>
         </Link>
 
         <NavigationMenu >
