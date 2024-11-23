@@ -1,24 +1,4 @@
-import { defineDocumentType, defineNestedType, makeSource } from 'contentlayer/source-files'
-
-const Social = defineNestedType(() => ({
-  name: 'Social',
-  fields: {
-    facebook: { type: 'string'},
-    twitter:  { type: 'string'},
-    linkedin: { type: 'string'},   
-  },
-}))
-
-const Author = defineNestedType(() => ({
-  name: 'Author',
-  fields: {
-    name:     { type: 'string', required: true },
-    job:      { type: 'string'},
-    bio:      { type: 'string'},
-    image:    { type: 'string', required: true },   
-    social:   { type:'nested', of: [Social]} 
-  },
-}))
+import { defineDocumentType, makeSource } from 'contentlayer/source-files'
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -39,9 +19,9 @@ export const Post = defineDocumentType(() => ({
       required: true,
       default: true
     },
-    view: {
+    author: {
       type: 'string',
-      description: 'The view of the post'
+      description: 'Name of author'
     },
     tags: {
       type: 'list',
@@ -58,11 +38,6 @@ export const Post = defineDocumentType(() => ({
       description: 'The image of the post',
       required: true,
     },
-    author: {
-      type: 'nested',
-      of: [Author],
-    },
-
     date: {
       type: 'date',
       description: 'The date of the post',
