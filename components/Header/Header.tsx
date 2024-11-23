@@ -11,7 +11,7 @@ import { ThemeToggle } from "@/components/theme/theme-toggle"
 
 export function Header() {
   return (
-    <header className="px-2 py-3 sm:px-4 w-full z-20 top-0 left-0 border-b border-gray-200">
+    <header className="px-2 py-3 sm:px-4 w-full border-b border-border">
 
       <div className="container flex gap-4 flex-wrap items-center justify-around md:justify-between mx-auto">
 

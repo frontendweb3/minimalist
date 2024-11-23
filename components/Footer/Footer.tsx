@@ -15,7 +15,7 @@ import { Instagram } from "@/components/icons/instagram"
 
 export function Footer() {
   return (
-    <footer className="block border-t border-gray-200">
+    <footer className="border-t border-border">
       {/* Container */}
       <div className="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
         {/* Component */}
