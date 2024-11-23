@@ -14,18 +14,7 @@ tags:
 category:
   - Smart Phone
 image: /images/ios.jpg
-view: 33k
-author:
-    name: Hannah Rivera
-    type: Author
-    image: "/images/woman-4.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social:
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Hannah Rivera
 ---
 
 Ea qui quis ad mollit enim in nostrud officia nisi id aute anim non. Adipisicing aliqua amet adipisicing consequat eiusmod anim exercitation proident quis. Proident incididunt veniam minim pariatur est aliquip tempor elit enim duis sint nulla.

@@ -13,18 +13,7 @@ tags:
 category:
   - Blog
 image: /images/blog-2.jpg
-view: 31k
-author: 
-    name: Rajdeep Singh
-    type: Author
-    image: "/images/rajdeep-singh.png"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Rajdeep Singh
 ---
 
 Est dolor incididunt adipisicing anim id anim sunt excepteur sint officia elit magna. Officia in exercitation magna qui qui consequat aliqua esse cillum. Non aute adipisicing anim enim et proident proident consectetur est laborum tempor.

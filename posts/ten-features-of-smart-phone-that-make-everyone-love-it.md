@@ -12,18 +12,7 @@ tags:
 category:
   - Smart Phone
 image: /images/iphone.jpg
-view: 39k
-author: 
-    name: Linda Pittman
-    type: Author
-    image: "/images/author-6.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Linda Pittman
 ---
 
 Ut ullamco et aliqua fugiat quis Lorem aliquip in. Ut velit sunt ut aliquip cupidatat aliquip. Ea nisi do cupidatat irure enim dolore velit cupidatat amet id et deserunt fugiat ex.

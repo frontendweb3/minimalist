@@ -6,24 +6,13 @@ description: Mollit aute nostrud voluptate amet irure consectetur commodo cupida
   Non ut dolor nulla dolor duis. Anim eiusmod fugiat eiusmod ut nulla nulla
   labore.
 date: 2022-11-09T08:18:10.494Z
-view: 20k
 draft: false
 tags:
   - Photography
 category:
   - Photography
 image: /images/camera.jpg
-author: 
-   name: Jeanne Ballard
-   type: Author
-   image: "/images/woman-5.jpg"
-   bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-   job: software developer
-   social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Jeanne Ballard
 ---
 
 **Officia labore** esse ex ullamco qui. Laboris nostrud id non fugiat ad. Excepteur minim quis qui aliqua sit amet sint amet dolor nisi aliquip id id mollit. Aliqua anim consectetur mollit do Lorem culpa. Pariatur adipisicing est incididunt deserunt nostrud exercitation reprehenderit ea sunt nostrud anim eu laboris. Cillum deserunt excepteur dolor nostrud nisi. Laborum occaecat magna est ex non est elit.

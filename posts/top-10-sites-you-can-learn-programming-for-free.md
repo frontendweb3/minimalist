@@ -5,7 +5,6 @@ title: Top 10 Sites You Can Learn Programming For Free!
 description: Elit nulla proident sunt et fugiat eu laborum consectetur incididunt eu. Cupidatat ad mollit sit esse sunt ipsum elit dolor deserunt.
 date: 2022-10-08T06:51:27.095Z
 draft: false
-view: 2k
 tags:
   - Learn
   - Programming
@@ -13,18 +12,7 @@ tags:
 category:
   - Blog
 image: /images/natural.jpg
-author: 
-    name: Annie Dean
-    type: Author
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    image: /images/female1.jpg
-    social: 
-        type: Social
-        facebook: https://www.facebook.com/officialrajdeepsingh
-        twitter: https://twitter.com/Official_R_deep
-        linkedin: https://www.linkedin.com/company/frontendweb/
-
+author: Annie Dean
 ---
 Culpa irure occaecat laboris consectetur magna. Adipisicing irure minim cupidatat in nulla et. In exercitation qui sit aliquip sint consectetur ex quis. Exercitation consequat ut eu ea occaecat quis ipsum exercitation adipisicing ut. Sunt minim ex elit sint cupidatat Lorem magna ad ad. 
 

@@ -12,18 +12,7 @@ tags:
 category:
   - Computer Science
 image: /images/technology.jpg
-view: 19k
-author: 
-   name: Emilio Tate
-   type: Author
-   image: "/images/author-3.jpg"
-   bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-   job: software developer
-   social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Emilio Tate
 ---
 Duis velit nisi pariatur incididunt culpa commodo ex nisi cillum culpa nisi aliquip et cupidatat. Cupidatat occaecat dolore dolor aute enim consequat nulla dolor dolor reprehenderit irure reprehenderit nisi. Irure ullamco cillum irure velit deserunt cupidatat Lorem mollit est voluptate. 
 ## Occaecat cupidatat

@@ -12,18 +12,7 @@ tags:
 category:
   - Blog
 image: /images/blogging.jpg
-view: 28k
-author: 
-    name: Gregg Walker
-    type: Author
-    image: "/images/author-4.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Gregg Walker
 ---
 
 Incididunt aute elit voluptate irure do culpa aliquip occaecat commodo incididunt minim officia eiusmod. Eiusmod fugiat sunt consectetur officia fugiat qui exercitation. Magna laboris fugiat consequat elit sunt. Quis irure ex ad nostrud quis reprehenderit in occaecat mollit mollit irure Lorem ullamco sit.

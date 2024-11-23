@@ -6,24 +6,13 @@ description: Lorem excepteur dolore ex veniam ad velit officia enim velit conseq
   consequat nulla eiusmod.
 date: 2022-10-08T08:48:51.359Z
 draft: false
-view: 19k
 tags:
   - Android
   - Android Features
 category:
   - Android
 image: /images/android.jpg
-author: 
-    name: Linda Pittman
-    type: Author
-    image: "/images/author-6.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Linda Pittman
 ---
 Anim amet qui ullamco proident. Reprehenderit deserunt et amet fugiat elit. Eu irure excepteur nisi reprehenderit est ipsum mollit.
 

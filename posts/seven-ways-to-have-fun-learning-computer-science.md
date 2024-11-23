@@ -12,19 +12,8 @@ tags:
   - Have Fun
 category:
   - Computer Science
-view: 38k
 image: /images/fantasy-android.jpg
-author: 
-    name: Linda Pittman
-    type: Author
-    image: "/images/author-6.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Linda Pittman
 ---
 In do officia nostrud elit. Voluptate cillum et labore eiusmod do esse veniam. Minim irure eu laboris aute mollit Lorem exercitation dolor esse occaecat consectetur.
 

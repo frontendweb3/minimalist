@@ -11,19 +11,8 @@ tags:
   - proident
 category: 
   - Cillum
-view: 26k
 image : /images/eyes.png
-author: 
-    name: Linda Pittman
-    type: Author
-    image: "/images/author-6.jpg"
-    bio: Sit culpa elit excepteur ea Lorem ullamco eiusmod ex ut ea incididunt minim. Cillum eiusmod fugiat cupidatat.
-    job: software developer
-    social: 
-      type: Social
-      facebook: https://www.facebook.com/officialrajdeepsingh
-      twitter: https://twitter.com/Official_R_deep
-      linkedin: https://www.linkedin.com/company/frontendweb/
+author: Linda Pittman
 ---
 
 Cillum cupidatat proident fugiat aute. Ea commodo Lorem ea ex enim consectetur anim. Consectetur culpa duis irure quis elit dolor consectetur sunt eiusmod excepteur.
