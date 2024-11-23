@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card } from '@/components/Card/Card';
 import _ from 'lodash';
-import { allPosts, Post } from 'contentlayer/generated';
+import { allPosts } from 'contentlayer/generated';
 import type { Metadata } from 'next'
+import type { Post } from 'contentlayer/generated';
+import { notFound } from 'next/navigation';
+
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
@@ -17,7 +20,7 @@ export async function generateStaticParams() {
   allPosts.map(
     item => {
       if (item.author !== undefined) {
-        paths.push({ slug: item.author?.name.trim().toLowerCase().replaceAll(" ", "-") })
+        paths.push({ slug: item.author?.trim().toLowerCase().replaceAll(" ", "-") })
       }
     }
   )
@@ -29,18 +32,19 @@ export async function generateStaticParams() {
   )
   return RemoveDuplicateAuthor
 }
-export default async function Page({ params }: {  params: Promise<{ slug: string }> }){
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
 
   const slug = (await params).slug
 
   const AuthorPosts: Post[] = allPosts.filter((post) => {
     if (post.author !== undefined) {
-      if (post.author?.name.trim().toLowerCase().replaceAll(" ", "-") === slug) return post
+      if (post.author?.trim().toLowerCase().replaceAll(" ", "-") === slug) return post
     }
   })
 
-  if (AuthorPosts.length === 0) throw new Error(`Author not found for slug: ${slug}`)
-
+  if (AuthorPosts.length === 0) {
+    notFound()
+  }
 
   return (
     <section className="py-32">

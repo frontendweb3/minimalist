@@ -4,6 +4,7 @@ import { allPosts } from 'contentlayer/generated';
 import _ from 'lodash';
 import dayjs from "dayjs";
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 export const generateStaticParams = async () => allPosts.map((post) => ({ slug: post._raw.flattenedPath }))
 
@@ -14,7 +15,9 @@ export async function generateMetadata( { params }: { params: Promise<{ slug: st
 
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
 
-  if (!post) throw new Error(`Post not found for slug: ${slug}`)
+  if (!post) {
+    notFound()
+  }
 
   return { title: post.title }
 
@@ -24,7 +27,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const slug = (await params).slug
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
 
-  if (!post) throw new Error(`Post not found for slug: ${slug}`)
+  if (!post) {
+    notFound()
+  }
 
   return (
     <main className="my-16 pt-8 pb-16 lg:pt-16 lg:pb-24">
@@ -39,8 +44,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
           <div className="flex items-center justify-between mt-4 mb-6 not-italic">
 
-            <Link href={`/author/${post.author?.name.trim().toLowerCase().replaceAll(" ", "-")}`} rel="author" className="no-underline">
-              Published By {post.author?.name}
+            <Link href={`/author/${post.author?.trim().toLowerCase().replaceAll(" ", "-")}`} rel="author" className="no-underline">
+              Published By {post?.author}
             </Link>
 
             <time dateTime={post.date} title={dayjs(post.date).format("MMM DD, YYYY")} className="text-base text-primary">
