@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Card } from '@/components/Card/Card';
 import { searchWithFuse } from "@/components/useFuse";
-import { Post } from 'contentlayer/generated';
+import type { Post } from 'contentlayer/generated';
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
