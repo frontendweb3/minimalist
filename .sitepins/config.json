@@ -6,7 +6,9 @@
   "content": {
     "root": "posts"
   },
-  "themeConfig": [],
+  "themeConfig": [
+    ".sitepins/config.json"
+  ],
   "arrangement": [],
-  "showCommitModal": false
+  "showCommitModal": true
 }
