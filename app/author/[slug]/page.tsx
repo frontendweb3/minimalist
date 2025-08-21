@@ -1,49 +1,53 @@
-import React from 'react';
-import { Card } from '@/components/Card/Card';
-import _ from 'lodash';
-import { allPosts } from 'contentlayer/generated';
-import type { Metadata } from 'next'
-import type { Post } from 'contentlayer/generated';
-import { notFound } from 'next/navigation';
+import React from "react";
+import { Card } from "@/components/Card/Card";
+import _ from "lodash";
+import { allPosts } from "contentlayer/generated";
+import type { Metadata } from "next";
+import type { Post } from "contentlayer/generated";
+import { notFound } from "next/navigation";
 
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params
-  return { title: `Published by ${slug?.trim().replaceAll(" ", "-")}` }
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  return { title: `Published by ${slug?.trim().replaceAll(" ", "-")}` };
 }
-
 
 export async function generateStaticParams() {
+  let paths: { slug: string }[] = [];
 
-  let paths: { slug: string }[] = []
-
-  allPosts.map(
-    item => {
-      if (item.author !== undefined) {
-        paths.push({ slug: item.author?.trim().toLowerCase().replaceAll(" ", "-") })
-      }
+  allPosts.map((item) => {
+    if (item.author !== undefined) {
+      paths.push({
+        slug: item.author?.trim().toLowerCase().replaceAll(" ", "-"),
+      });
     }
-  )
+  });
 
-  const RemoveDuplicateAuthor = paths.filter((value, index, self) =>
-    index === self.findIndex((t) => (
-      t.slug === value.slug
-    ))
-  )
-  return RemoveDuplicateAuthor
+  const RemoveDuplicateAuthor = paths.filter(
+    (value, index, self) =>
+      index === self.findIndex((t) => t.slug === value.slug),
+  );
+  return RemoveDuplicateAuthor;
 }
-export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
-
-  const slug = (await params).slug
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
 
   const AuthorPosts: Post[] = allPosts.filter((post) => {
     if (post.author !== undefined) {
-      if (post.author?.trim().toLowerCase().replaceAll(" ", "-") === slug) return post
+      if (post.author?.trim().toLowerCase().replaceAll(" ", "-") === slug)
+        return post;
     }
-  })
+  });
 
   if (AuthorPosts.length === 0) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -56,43 +60,11 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         </div>
 
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {AuthorPosts.map((item) => <Card key={item.id} item={item} />)}
+          {AuthorPosts.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-
-
-//export async function getStaticPaths() {
-//
-
-//}
-//
-
-//export async function getStaticProps({ params }: { params: { slug: string } }) {
-//
-//  let author: AuthorType = {}
-//
-//  let authorPost = _.filter(allPosts, (item) => {
-//
-//    if (item.author?.name.trim().toLowerCase().replaceAll(" ", "-") === params.slug) {
-//
-//      author = {
-//        firstName: item.author?.name.trim().split(" ")[0],
-//        lastName: item.author?.name.trim().split(" ")[1],
-//        job: item.author?.job,
-//        image: item.author?.image,
-//        social: item.author?.social,
-//      }
-//
-//    }
-//
-//    return item.author?.name.trim().toLowerCase().replaceAll(" ", "-") === params.slug
-//  })
-//
-//  return {
-//    props: { posts: authorPost, author },
-//  }
-//}
