@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const { withContentlayer } = require('next-contentlayer')
-const withVercelToolbar = require('@vercel/toolbar/plugins/next')();
+const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: true
+  trailingSlash: true,
 };
 
-module.exports = withVercelToolbar(withContentlayer(nextConfig))
+module.exports = withContentlayer(nextConfig);
