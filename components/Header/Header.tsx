@@ -16,7 +16,7 @@ export function Header() {
       <div className="container flex gap-4 flex-wrap items-center justify-around md:justify-between mx-auto">
 
         <Link href="/" className="flex items-center">
-          <Button variant="link" className="[&_svg]:size-8 stroke">
+          <Button variant="link" className="[&_svg]:size-8 stroke" asChild>
             <Sparkles size={30} strokeWidth={1.2} /> <span className="self-center text-2xl font-semibold whitespace-nowrap">Minimalist</span>
           </Button>
         </Link>
