@@ -58,12 +58,11 @@ export default async function Page({
             {slug.replaceAll("-", " ")}
           </h2>
         </div>
-
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {AuthorPosts.map((item) => (
-            <Card key={item.id} item={item} />
-          ))}
-        </div>
+      </div>
+      <div className="mt-28 max-w-7xl mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        {AuthorPosts.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
       </div>
     </section>
   );
