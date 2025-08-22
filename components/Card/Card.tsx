@@ -1,8 +1,7 @@
 import Link from "next/link";
-import type { Post, DocumentTypes } from 'contentlayer/generated'
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
-
+import type { Post, DocumentTypes } from "contentlayer/generated";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import {
   Card as CardLayout,
   CardContent,
@@ -12,22 +11,32 @@ import {
 } from "@/components/ui/card";
 
 export function Card({ item }: { item: DocumentTypes | Post }) {
-
   return (
-    <CardLayout key={item.id} className="flex flex-col text-clip rounded-sm border border-border">
-      <CardHeader>
-        <div className="w-full rounded-xl">
-          <Image height={250} width={250} src={item.image} alt={item.title} className="aspect-[16/9] rounded-t-lg size-full object-cover object-center" />
-        </div>
+    <CardLayout
+      key={item.id}
+      className="flex flex-col py-0 h-[564px] gap-0 mx-4 lg:!mx-0 rounded-none"
+    >
+      <CardHeader className="relative w-full py-0 overflow-hidden h-[264px]">
+        <Image
+          fill={true}
+          src={item.image}
+          alt={item.title}
+          className="object-fill"
+        />
       </CardHeader>
-      <CardContent className="px-6 py-8 md:px-8 md:py-10 lg:px-8 lg:py-12">
-        <CardTitle className="mb-3 text-lg font-semibold md:mb-4 md:text-xl lg:mb-6">{item.title}</CardTitle>
-        <CardDescription className="mb-3 text-muted-foreground md:mb-4 lg:mb-6 truncate">{item.description} </CardDescription>
-        <Link href={`/read/${item.slug}`} className="mt-5 flex items-center hover:underline">
-          Read more
-          <ArrowRight className="ml-2 size-4" />
-        </Link>
+      <CardContent className="py-8 md:py-10 space-y-7 lg:py-12">
+        <CardTitle className="text-lg font-semibold md:text-xl">
+          <Link
+            href={`/read/${item.slug}`}
+            className="flex items-center hover:underline hover:underline-offset-4"
+          >
+            {item.title}
+          </Link>
+        </CardTitle>
+        <CardDescription className="mb-3 leading-7 line-clamp-3 md:mb-4 lg:mb-6">
+          {item.description}{" "}
+        </CardDescription>
       </CardContent>
     </CardLayout>
-  )
+  );
 }
