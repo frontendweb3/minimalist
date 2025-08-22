@@ -2,7 +2,8 @@
 id: 09
 type: Post
 title: The Five Secrets You Will Never Know About Blogging
-description: Non aute adipisicing anim enim et proident proident consectetur est laborum
+description:
+  Non aute adipisicing anim enim et proident proident consectetur est laborum
   tempor.
 date: 2022-11-22T07:20:16.517Z
 draft: false
@@ -18,10 +19,8 @@ author: Rajdeep Singh
 
 Est dolor incididunt adipisicing anim id anim sunt excepteur sint officia elit magna. Officia in exercitation magna qui qui consequat aliqua esse cillum. Non aute adipisicing anim enim et proident proident consectetur est laborum tempor.
 
-```javascript 
-
-console.log("hello-world")
-
+```javascript
+console.log("hello-world");
 ```
 
 Labore consectetur commodo exercitation aute mollit. Excepteur nulla est deserunt dolor ut laborum cupidatat qui exercitation non duis commodo cillum eiusmod. Labore laborum nisi mollit enim commodo non aliquip occaecat mollit sit. Cupidatat ea veniam sint irure minim ea laboris minim est. Est quis consectetur cillum exercitation cillum nostrud est dolore incididunt ex exercitation aute Lorem eiusmod.
