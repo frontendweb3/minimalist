@@ -1,90 +1,67 @@
-"use client"
+import Link from "next/link";
+import { cn } from "lib/utils";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
-import * as React from "react"
-import Link from "next/link"
-import { cn } from "lib/utils"
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
-import { Button } from "@/components/ui/button"
-import { Lock, Search } from "lucide-react"
-import { ThemeToggle } from "@/components/theme/theme-toggle"
-import { Sparkles } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Asterisk, Lock, Search } from "lucide-react";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
+import { Sparkles } from "lucide-react";
+import React from "react";
+
+const navList: { key: number; title: string; href: string }[] = [
+  { key: 456, title: "Home", href: "/" },
+  { key: 457, title: "About", href: "/about" },
+  { key: 458, title: "Contact", href: "/contact" },
+];
 
 export function Header() {
   return (
-    <header className="px-2 py-3 sm:px-4 w-full border-b border-border">
-
+    <header className="px-2 py-3 sm:px-4 w-full border-b">
       <div className="container flex gap-4 flex-wrap items-center justify-around md:justify-between mx-auto">
-
         <Link href="/" className="flex items-center">
-          <Button variant="link" className="[&_svg]:size-8 stroke" asChild>
-            <Sparkles size={30} strokeWidth={1.2} /> <span className="self-center text-2xl font-semibold whitespace-nowrap">Minimalist</span>
-          </Button>
+          <Asterisk />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap">
+            Minimalist
+          </span>
         </Link>
 
-        <NavigationMenu >
+        <NavigationMenu className="mx-auto">
           <NavigationMenuList>
-
-            <NavigationMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Home
+            {navList.map((item) => (
+              <NavigationMenuItem key={item.key}>
+                <NavigationMenuLink
+                  asChild
+                  className={navigationMenuTriggerStyle()}
+                >
+                  <Link href={item.href}>{item.title} </Link>
                 </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  About
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Contact
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex flex-row ">
+        <div className="flex flex-row gap-5 items-center">
           <Link href={"/search"}>
-            <Button variant="link"> <Search /> </Button>
+            <Button variant="link">
+              {" "}
+              <Search />{" "}
+            </Button>
           </Link>
-          <Button variant="link"> <Lock /> Login </Button>
+          <Button variant="link">
+            {" "}
+            <Lock /> Login{" "}
+          </Button>
           <ThemeToggle />
         </div>
       </div>
     </header>
-  )
+  );
 }
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
