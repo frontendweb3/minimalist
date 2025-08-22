@@ -1,13 +1,11 @@
-import React from 'react'
-import { Mail, FileText } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
 
-import type { Metadata } from 'next'
- 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'About us - Built Minimalist website.',
-}
+  title: "About Us",
+  description: "About us - Built Minimalist website.",
+};
 
 export default function About() {
   return (
@@ -49,5 +47,6 @@ export default function About() {
           <div className="min-h-[530px] overflow-hidden rounded-md bg-gray-100"></div>
         </div>
       </div>
-    </section>)
+    </section>
+  );
 }
