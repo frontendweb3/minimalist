@@ -13,8 +13,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Asterisk, Lock, Search } from "lucide-react";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { Sparkles } from "lucide-react";
-import React from "react";
 
 const navList: { key: number; title: string; href: string }[] = [
   { key: 456, title: "Home", href: "/" },
@@ -41,7 +39,7 @@ export function Header() {
                   asChild
                   className={navigationMenuTriggerStyle()}
                 >
-                  <Link href={item.href}>{item.title} </Link>
+                  <Link href={item.href}>{item.title}</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             ))}
@@ -49,12 +47,11 @@ export function Header() {
         </NavigationMenu>
 
         <div className="flex flex-row gap-5 items-center">
-          <Link href={"/search"}>
-            <Button variant="link">
-              {" "}
-              <Search />{" "}
-            </Button>
-          </Link>
+          <Button variant="link" asChild>
+            <Link href={"/search"}>
+              <Search />
+            </Link>
+          </Button>
           <Button variant="link">
             {" "}
             <Lock /> Login{" "}
